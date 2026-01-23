@@ -558,7 +558,6 @@ footer {
   /* ---------- HERO ---------- */
   .hero-section {
     height: auto;
-    min-height: 520px;
   }
 
   .hero-content {
@@ -580,7 +579,8 @@ footer {
 
   .hero-content .grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 24px;
+    display: flex;
   }
 
   .hero-content h2 {
@@ -624,13 +624,6 @@ footer {
   /* ---------- CORE STRENGTHS ---------- */
   .core-card {
     width: 100%;
-  }
-
-  .core-arrow {
-    right: 16px;
-    top: auto;
-    bottom: 16px;
-    transform: none;
   }
 
   .core-bottom {
