@@ -9,15 +9,15 @@ const Footer = () => {
   return (
     <footer className="text-white">
       {/* Top section */}
-      <div className="container-main grid grid-cols-1 md:grid-cols-3 gap-12">
-        
+      <div className="container-main grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+
         {/* Left: Logo & description */}
         <div>
           <div className="flex items-center gap-3 mb-6">
             <img
               src="/footer-logo.png"
               alt="Firenor"
-              className="h-12"
+              className="h-10 sm:h-12"
             />
           </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Middle: Links */}
         <div className="md:pl-16">
-          <ul className="space-y-4 text-sm">
+          <ul className="space-y-3 text-sm">
             <li>Home</li>
             <li>About Us</li>
             <li>Services</li>
@@ -72,10 +72,10 @@ const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-white/30 mx-24 my-4" />
+      <div className="border-t border-white/30 mx-4 sm:mx-24 my-6" />
 
       {/* Bottom copyright */}
-      <div className="container-main text-sm opacity-80">
+      <div className="container-main text-xs sm:text-sm opacity-80 text-center sm:text-left">
         © 2026 Firenor All rights reserved.
       </div>
     </footer>

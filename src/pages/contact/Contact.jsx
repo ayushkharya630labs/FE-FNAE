@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       {/* ================= CONTACT HERO ================= */}
-      <section className="contact-hero mb-10">
+      <section className="contact-hero mb-10 py-sm-10">
         {/* Background layers */}
         <div className="contact-hero-bg-left"></div>
         <div className="contact-hero-bg-right"></div>
@@ -14,7 +14,7 @@ const Contact = () => {
         {/* Content */}
         <div className="relative z-10 h-full">
           <div className="container-main h-full flex items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-md-16 gap-10 w-full">
 
               {/* LEFT CONTENT */}
               <div>
