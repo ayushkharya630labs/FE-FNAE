@@ -46,14 +46,14 @@ const Home = () => {
                         </div>
 
                         <div>
-                            <h2 className="text-5xl font-light text-white">350</h2>
+                            <h2 className="text-5xl font-light text-white">+350</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Successful projects
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-5xl font-light text-white">550</h2>
+                            <h2 className="text-5xl font-light text-white">+550</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Expert team
                             </p>

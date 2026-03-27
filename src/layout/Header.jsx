@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { MenuOutlined, CloseOutlined, DownOutlined, SafetyOutlined, ControlOutlined, ThunderboltOutlined } from "@ant-design/icons";
 import logo from "../assets/logo.png";
 
 const Header = () => {
@@ -26,15 +26,35 @@ const Header = () => {
             <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               About Us
             </NavLink>
-            <NavLink to="/services" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Services
-            </NavLink>
+            <div className="nav-dropdown">
+              <NavLink
+                to="/services"
+                className={({ isActive }) => `nav-link dropdown-toggle ${isActive ? "active" : ""}`}
+              >
+                Services <DownOutlined className="dropdown-icon" />
+              </NavLink>
+
+              <div className="dropdown-menu">
+                <NavLink to="/services/fire-protection">
+                  <SafetyOutlined /> Fire Protection & Safety
+                </NavLink>
+
+                <NavLink to="/services/instrumentation-control">
+                  <ControlOutlined /> Instrumentation & Control Automation
+                </NavLink>
+
+                <NavLink to="/services/electrical-systems">
+                  <ThunderboltOutlined /> Electrical Systems
+                </NavLink>
+              </div>
+            </div>
+
             <NavLink to="/clients" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Clients
             </NavLink>
-            <NavLink to="/strengths" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+            {/* <NavLink to="/strengths" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Core Strengths
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Contact Us
             </NavLink>
@@ -56,7 +76,22 @@ const Header = () => {
         <nav className="mobile-nav">
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/about" onClick={() => setOpen(false)}>About Us</NavLink>
-          <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
+          <div className="mobile-services">
+            <span className="mobile-services-title">Services</span>
+
+            <NavLink to="/services/fire-protection" onClick={() => setOpen(false)}>
+              <SafetyOutlined /> Fire Protection & Safety
+            </NavLink>
+
+            <NavLink to="/services/instrumentation-control" onClick={() => setOpen(false)}>
+              <ControlOutlined /> Instrumentation & Control Automation
+            </NavLink>
+
+            <NavLink to="/services/electrical-systems" onClick={() => setOpen(false)}>
+              <ThunderboltOutlined /> Electrical Systems
+            </NavLink>
+          </div>
+
           <NavLink to="/clients" onClick={() => setOpen(false)}>Clients</NavLink>
           <NavLink to="/strengths" onClick={() => setOpen(false)}>Core Strengths</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink>

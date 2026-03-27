@@ -4,6 +4,7 @@ import {
   MailOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,10 +32,40 @@ const Footer = () => {
         {/* Middle: Links */}
         <div className="md:pl-16">
           <ul className="space-y-3 text-sm">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Clients</li>
+
+            <li>
+              <Link to="/" className="hover:text-red-400">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/about" className="hover:text-red-400">About Us</Link>
+            </li>
+
+            {/* Services Group */}
+            <li className="mt-4 font-semibold text-white">Services</li>
+
+            <li>
+              <Link to="/services/fire-protection" className="hover:text-red-400">
+                - Fire Protection & Safety
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/services/instrumentation-control" className="hover:text-red-400">
+                - Instrumentation & Control
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/services/electrical-systems" className="hover:text-red-400">
+                - Electrical Systems
+              </Link>
+            </li>
+
+            <li className="mt-4">
+              <Link to="/clients" className="hover:text-red-400">Clients</Link>
+            </li>
+
           </ul>
         </div>
 
