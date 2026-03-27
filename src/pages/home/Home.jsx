@@ -94,7 +94,7 @@ const Home = () => {
                                     Typical...
                                 </p>
 
-                                <a href="#" className="expertise-link">
+                                <a href="/services/fire-protection" className="expertise-link">
                                     VIEW <span>›</span>
                                 </a>
                             </div>
@@ -119,7 +119,7 @@ const Home = () => {
                                     commissioning...
                                 </p>
 
-                                <a href="#" className="expertise-link">
+                                <a href="/services/instrumentation-control" className="expertise-link">
                                     VIEW <span>›</span>
                                 </a>
                             </div>
@@ -144,7 +144,7 @@ const Home = () => {
                                     electrification projects.
                                 </p>
 
-                                <a href="#" className="expertise-link">
+                                <a href="/services/electrical-systems" className="expertise-link">
                                     VIEW <span>›</span>
                                 </a>
                             </div>
