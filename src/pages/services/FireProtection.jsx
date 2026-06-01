@@ -17,10 +17,10 @@ const FireProtection = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <p className="text-sm text-gray-600 mb-10">
+                    <h3 className="text-gray-600 mb-6">
                         The scope of work we undertake typically include the following,
                         individually or collectively
-                    </p>
+                    </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Card 1 */}
@@ -122,9 +122,9 @@ const FireProtection = () => {
                 <div className="container-main">
 
                     {/* Heading */}
-                    <p className="text-sm text-gray-600 mb-8">
+                   <h3 className="text-gray-600 mb-6">
                         Design, Engineering, Implementation of solutions for Tankage Solutions -
-                    </p>
+                    </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 

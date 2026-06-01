@@ -17,10 +17,10 @@ const ElectricalSystems = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <p className="text-sm text-gray-600 mb-10">
+                    <h3 className="text-gray-600 mb-6">
                         The scope of work we undertake typically include the following,
                         individually or collectively
-                    </p>
+                    </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Card 1 */}

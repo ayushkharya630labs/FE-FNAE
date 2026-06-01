@@ -17,9 +17,9 @@ const InstrumentationControl = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <p className="text-sm text-gray-600 mb-10">
+                    <h3 className="text-gray-600 mb-6">
                         Our core expertise included
-                    </p>
+                    </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Card 1 */}
@@ -158,9 +158,9 @@ const InstrumentationControl = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <p className="text-sm text-gray-600 mb-10">
+                   <h3 className="text-gray-600 mb-6">
                         Our control system capabilities include design and implementation of
-                    </p>
+                    </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Card 1 */}

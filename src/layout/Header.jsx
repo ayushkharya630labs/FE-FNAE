@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { MenuOutlined, CloseOutlined, DownOutlined, SafetyOutlined, ControlOutlined, ThunderboltOutlined } from "@ant-design/icons";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  const isServicesActive = location.pathname.startsWith("/services");
 
   return (
     <>
@@ -27,11 +30,12 @@ const Header = () => {
               About Us
             </NavLink>
             <div className="nav-dropdown">
-              <NavLink
-                className={({ isActive }) => `nav-link dropdown-toggle ${isActive ? "active" : ""}`}
+              <div
+                className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
+                  }`}
               >
                 Services <DownOutlined className="dropdown-icon" />
-              </NavLink>
+              </div>
 
               <div className="dropdown-menu">
                 <NavLink to="/services/fire-protection">
