@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Square721";
+  src: url("/fonts/Square721-BT-Roman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  font-family: "Square 721";
+  font-family: "Square721", sans-serif;
 }
 .m-0 {
   margin: 0 !important;

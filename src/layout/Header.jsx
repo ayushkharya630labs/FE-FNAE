@@ -28,7 +28,6 @@ const Header = () => {
             </NavLink>
             <div className="nav-dropdown">
               <NavLink
-                to="/services"
                 className={({ isActive }) => `nav-link dropdown-toggle ${isActive ? "active" : ""}`}
               >
                 Services <DownOutlined className="dropdown-icon" />

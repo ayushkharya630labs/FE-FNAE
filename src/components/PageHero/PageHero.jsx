@@ -29,7 +29,7 @@ const PageHero = ({
           {/* Breadcrumb */}
           <p className="text-sm text-gray-300 mb-2">
             {breadcrumb} /{" "}
-            <span className="text-secondary">{current}</span>
+            <span className="">{current}</span>
           </p>
 
           {/* Title */}

@@ -10,7 +10,7 @@ const InstrumentationControl = () => {
                 current="Instrumentation & Control Automation "
                 title="Instrumentation & Control Automation "
                 description="We have a full-fledged instrumentation design and construction team that can undertake installation, testing and commissioning activities in oil storage terminals, refineries and petrochemical industries. The division comprises a team of highly trained, experienced and motivated group of professionals supported by the latest test and field equipments. We lay great emphasis on continuous learning with opportunities to improve and grow our skills."
-                leftBg="/images/home/hero-left.jpg"
+                leftBg="/images/home/hero-right.png"
                 rightBg="/images/services/instrumentation-control.jpg"
             />
 

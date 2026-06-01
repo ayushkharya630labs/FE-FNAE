@@ -11,16 +11,16 @@ const About = () => {
                 description="Lorem Ipsum is simply dummy text of the printing and
         typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s..."
-                leftBg="/images/home/hero-left.jpg"
+                leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/about/about-hero.jpg"
             />
 
             {/* ================= OUR STORY ================= */}
             <section className="bg-white mt-16">
-                <div className="container-main py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
 
                     {/* Left text */}
-                    <div>
+                    <div className="p-16 flex flex-col justify-center">
                         <h2 className="section-title mb-2">Our Story</h2>
                         <div className="section-underline mb-6"></div>
 

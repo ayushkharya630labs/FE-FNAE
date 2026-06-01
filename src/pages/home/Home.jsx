@@ -16,7 +16,7 @@ const Home = () => {
 
                 {/* Background layers */}
                 <div className="hero-bg-left" />
-                <div className="hero-bg-right" />
+                {/* <div className="hero-bg-right" /> */}
                 <div className="hero-overlay" />
 
                 {/* Content */}
@@ -25,12 +25,12 @@ const Home = () => {
                     {/* Heading */}
                     <div className="max-w-3xl">
                         <h1 className="text-4xl md:text-5xl font-light leading-tight">
-                            <span className="text-secondary">
+                            <span className="text-white">
                                 Integrated Engineering Solutions
                             </span>
                             <br />
-                            <span className="text-secondary"> for </span>
-                            <span className="text-white font-medium">
+                            <span className="text-white"> for </span>
+                            <span className="text-secondary font-medium">
                                 Precision in Engineering
                             </span>
                         </h1>
@@ -53,7 +53,7 @@ const Home = () => {
                         </div>
 
                         <div>
-                            <h2 className="text-5xl font-light text-white">+550</h2>
+                            <h2 className="text-5xl font-light text-white">+150</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Expert team
                             </p>

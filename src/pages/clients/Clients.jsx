@@ -9,7 +9,7 @@ const Clients = () => {
                 current="Clients"
                 title="Our Clients"
                 description="Trusted by clients across industries, we have delivered over 350 projects with a strong focus on safety, quality, and compliance."
-                leftBg="/images/home/hero-left.jpg"
+                leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/clients/clients-bg.jpg"
             />
             <section className="py-12">

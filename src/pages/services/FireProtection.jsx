@@ -10,7 +10,7 @@ const FireProtection = () => {
                 current="Fire Protection & Safety"
                 title="Fire Protection & Safety"
                 description="Fire protection & Safety division undertakes turnkey projects in Fire Detection, Alarm, Protection & Suppression Systems. Typical project scope includes the complete chain from conceptual engineering to installation and commissioning. Our after sales support includes services and maintenance of all our systems and supply of spare parts."
-                leftBg="/images/home/hero-left.jpg"
+                leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/services/fire-protection.jpg"
             />
 
