@@ -110,7 +110,7 @@ const Home = () => {
 
                             <div className="p-6">
                                 <h3 className="expertise-title mb-3">
-                                    Instrumentation & Control Automation
+                                    Instrumentation & Automation
                                 </h3>
 
                                 <p className="expertise-desc mb-6">
@@ -284,12 +284,19 @@ const Home = () => {
 
                             {/* Left info */}
                             <div className="core-card core-info basis-[50%]">
-                                <h3>We are energy</h3>
-                                <p>
-                                    Over 25 years experience & knowledge of international
-                                    industrial systems, dedicated to provide the best
-                                    economical solutions.
-                                </p>
+                                <div className="core-shape shape-1"></div>
+                                <div className="core-shape shape-2"></div>
+                                <div className="core-shape shape-3"></div>
+                                <div className="core-shape shape-4"></div>
+
+                                <div className="core-info-content">
+                                    <h3>We are energy</h3>
+                                    <p>
+                                        Over 25 years experience & knowledge of international
+                                        industrial systems, dedicated to provide the best
+                                        economical solutions.
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Right image */}
