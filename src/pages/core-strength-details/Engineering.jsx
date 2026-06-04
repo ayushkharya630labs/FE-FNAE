@@ -34,7 +34,7 @@ const Engineering = () => {
                 title="Design & Engineering"
                 description="Firenor Middle East delivers advanced Design and Engineering solutions for fire protection, fire detection, and integrated industrial systems serving oil tanking terminals, petrochemical facilities, and high-risk industrial environments across the UAE."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/project-management-hero.png"
+                rightBg="/images/core-strengths/engineering/engineering-hero.jpg"
             />
 
             <section className="py-16 bg-[#f4f4f4]">

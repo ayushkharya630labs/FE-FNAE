@@ -34,7 +34,7 @@ const Maintenance = () => {
                 title="Maintenance & Lifecycle Support"
                 description="Firenor Middle East provides comprehensive Maintenance and Lifecycle Support Services to maximize system availability, regulatory compliance, and long-term operational performance."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/project-management-hero.png"
+                rightBg="/images/core-strengths/maintenance/maintenance-hero.jpg"
             />
 
             <section className="py-16 bg-[#f4f4f4]">

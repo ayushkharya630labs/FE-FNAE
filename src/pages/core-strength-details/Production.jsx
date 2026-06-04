@@ -34,7 +34,7 @@ const Production = () => {
                 title="Production & Manufacturing"
                 description="Firenor Middle East delivers specialized fabrication, production, and manufacturing solutions for fire protection skids, packaged systems, and engineered industrial units through strategic manufacturing partnerships across the UAE, China, and Europe."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/project-management-hero.png"
+                rightBg="/images/core-strengths/production/production-hero.png"
             />
 
             <section className="py-16 bg-[#f4f4f4]">
