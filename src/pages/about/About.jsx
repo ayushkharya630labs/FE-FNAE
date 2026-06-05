@@ -8,9 +8,7 @@ const About = () => {
                 breadcrumb="Home"
                 current="About Us"
                 title="About Us"
-                description="Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s..."
+                description="Firenor is a Norwegian-based company with an international presence, delivering engineered fire protection and safety solutions to the energy, oil & gas, industrial, and renewable sectors since 1953."
                 leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/about/about-hero.jpg"
             />
@@ -25,17 +23,12 @@ const About = () => {
                         <div className="section-underline mb-6"></div>
 
                         <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's
-                            standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a
-                            type specimen book.
+                            Founded in Norway in 1953, Firenor has built a strong reputation for delivering high-end engineered fire protection and safety systems to clients worldwide. With decades of industry experience, we help organizations mitigate risk through innovative, reliable, and standards-compliant fire safety solutions.
                         </p>
 
                         <p className="text-sm text-gray-600 leading-relaxed">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's
-                            standard dummy text ever since the 1500s.
+                            Our expertise spans the complete project lifecycle, from concept development and engineering design to manufacturing, testing, installation, commissioning, and long-term maintenance support. This integrated approach enables us to provide tailored solutions that meet the demanding requirements of industrial, energy, offshore, and infrastructure projects.
+
                         </p>
                     </div>
 
@@ -64,12 +57,9 @@ const About = () => {
                     {/* Teal content */}
                     <div className="bg-[#47A5AE] text-white p-16 flex items-center">
                         <p className="text-sm leading-relaxed max-w-xl">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's
-                            standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a
-                            type specimen book. Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry.
+                            Firenor designs, engineers, manufactures, and supplies comprehensive fire safety systems for projects in the energy, oil & gas, marine, industrial, and renewable sectors. Our portfolio includes gaseous suppression systems, sprinkler systems, foam systems, water mist systems, hydrants, utility stations, hose reels, and specialized firefighting solutions.
+                            <br/>
+                            By combining Norwegian engineering expertise with global project experience, we deliver reliable systems that protect people, assets, and operations in some of the world's most demanding environments.
                         </p>
                     </div>
                 </div>
