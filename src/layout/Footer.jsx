@@ -63,6 +63,9 @@ const Footer = () => {
             </li>
 
             <li className="mt-4">
+              <Link to="/core-strengths" className="hover:text-red-400">Core Strengths</Link>
+            </li>
+            <li className="mt-4">
               <Link to="/clients" className="hover:text-red-400">Clients</Link>
             </li>
 

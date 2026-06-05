@@ -715,10 +715,9 @@ footer {
   }
 
   .hero-content .grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    display: flex;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 
   .hero-content h2 {
     font-size: 32px;
@@ -789,5 +788,121 @@ footer {
 
   footer ul li {
     padding-left: 0;
+  }
+}
+
+/* ===========================
+   TABLETS (768px - 1024px)
+   =========================== */
+@media (max-width: 1024px) {
+
+  .container-main {
+    padding: 0 40px;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .hero-content .grid {
+    max-width: 100%;
+  }
+
+  /* About */
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 48px 40px;
+  }
+
+  .about-right {
+    padding: 40px;
+  }
+
+  /* Clients */
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Core */
+  .core-info {
+    padding: 50px 40px;
+  }
+
+  .core-info h3 {
+    font-size: 24px;
+  }
+
+  .core-bottom {
+    flex-wrap: wrap;
+  }
+
+  .core-bottom .core-card {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .core-bottom .core-card:last-child {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 767px) {
+
+  .hero-content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  /* Stats */
+  .hero-content .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 34px;
+  }
+
+  /* Core Section */
+  .flex.mt-8 {
+    flex-direction: column;
+  }
+
+  .core-card,
+  .core-info {
+    width: 100%;
+  }
+
+  .core-info {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .core-arrow {
+    width: 36px;
+    height: 36px;
+    right: 20px;
+  }
+
+  /* Clients */
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Certification */
+  .cert-section p.text-\[\#43494E\] {
+    font-size: 16px;
+    line-height: 1.6;
   }
 }
