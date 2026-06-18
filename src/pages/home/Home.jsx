@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
     FileTextOutlined,
     SettingOutlined,
@@ -10,20 +11,67 @@ import {
 import { Link } from "react-router-dom";
 
 const Home = () => {
+    const fadeUp = {
+        hidden: {
+            opacity: 0,
+            y: 40,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+            },
+        },
+    };
+
+    const stagger = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.12,
+            },
+        },
+    };
+
     return (
         <>
-            <section className="hero-section">
+            <motion.section
+                className="hero-section"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+            >
 
                 {/* Background layers */}
-                <div className="hero-bg-left" />
+                <motion.div
+                    className="hero-bg-left"
+                    initial={{ scale: 1.08 }}
+                    animate={{ scale: 1 }}
+                    transition={{
+                        duration: 6,
+                        ease: "easeOut"
+                    }}
+                />
+
                 {/* <div className="hero-bg-right" /> */}
+
                 <div className="hero-overlay" />
 
                 {/* Content */}
                 <div className="hero-content container-main flex flex-col justify-center">
 
                     {/* Heading */}
-                    <div className="max-w-3xl">
+                    <motion.div
+                        className="max-w-3xl"
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.2
+                        }}
+                    >
                         <h1 className="text-4xl md:text-5xl font-light leading-tight">
                             <span className="text-white">
                                 Integrated Engineering Solutions
@@ -34,53 +82,114 @@ const Home = () => {
                                 Precision in Engineering
                             </span>
                         </h1>
-                    </div>
+                    </motion.div>
 
                     {/* Stats */}
-                    <div className="mt-16 grid grid-cols-3 max-w-3xl">
-                        <div>
+                    <motion.div
+                        className="mt-16 grid grid-cols-3 max-w-3xl"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 0.6,
+                            duration: 0.8
+                        }}
+                    >
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                delay: 0.8,
+                                duration: 0.6
+                            }}
+                        >
                             <h2 className="text-5xl font-light text-white">+25</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Years of experience
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                delay: 1,
+                                duration: 0.6
+                            }}
+                        >
                             <h2 className="text-5xl font-light text-white">+350</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Successful projects
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                delay: 1.2,
+                                duration: 0.6
+                            }}
+                        >
                             <h2 className="text-5xl font-light text-white">+150</h2>
                             <p className="mt-2 text-sm text-gray-300">
                                 Expert team
                             </p>
-                        </div>
-                    </div>
+                        </motion.div>
+
+                    </motion.div>
 
                 </div>
-            </section>
-            {/* ===== Explore Our Expertise ===== */}
-            <section className="py-16 bg-white">
+            </motion.section>
+
+            <motion.section
+                className="py-16 bg-white"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
 
                     {/* Section Header */}
-                    <div className="mb-12">
+                    <motion.div
+                        className="mb-12"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >
                         <h2 className="section-title">Explore Our Expertise</h2>
                         <div className="section-underline"></div>
-                    </div>
+                    </motion.div>
 
                     {/* Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                         {/* Card 1 */}
-                        <div className="expertise-card">
-                            <img
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.1
+                            }}
+                            whileHover={{
+                                y: -10
+                            }}
+                        >
+                            <motion.img
                                 src="/images/home/expertise-1.jpg"
                                 alt="Fire Protection"
                                 className="w-full h-48 object-cover"
+                                whileHover={{
+                                    scale: 1.05
+                                }}
+                                transition={{
+                                    duration: 0.5
+                                }}
                             />
 
                             <div className="p-6">
@@ -94,18 +203,40 @@ const Home = () => {
                                     Typical...
                                 </p>
 
-                                <a href="/services/fire-protection" className="expertise-link">
+                                <motion.a
+                                    href="/services/fire-protection"
+                                    className="expertise-link"
+                                    whileHover={{ x: 4 }}
+                                >
                                     VIEW <span>›</span>
-                                </a>
+                                </motion.a>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 2 */}
-                        <div className="expertise-card">
-                            <img
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.25
+                            }}
+                            whileHover={{
+                                y: -10
+                            }}
+                        >
+                            <motion.img
                                 src="/images/home/expertise-2.jpg"
                                 alt="Instrumentation"
                                 className="w-full h-48 object-cover"
+                                whileHover={{
+                                    scale: 1.05
+                                }}
+                                transition={{
+                                    duration: 0.5
+                                }}
                             />
 
                             <div className="p-6">
@@ -119,18 +250,40 @@ const Home = () => {
                                     commissioning...
                                 </p>
 
-                                <a href="/services/instrumentation-control" className="expertise-link">
+                                <motion.a
+                                    href="/services/instrumentation-control"
+                                    className="expertise-link"
+                                    whileHover={{ x: 4 }}
+                                >
                                     VIEW <span>›</span>
-                                </a>
+                                </motion.a>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 3 */}
-                        <div className="expertise-card">
-                            <img
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.4
+                            }}
+                            whileHover={{
+                                y: -10
+                            }}
+                        >
+                            <motion.img
                                 src="/images/home/expertise-3.jpg"
                                 alt="Electrical Systems"
                                 className="w-full h-48 object-cover"
+                                whileHover={{
+                                    scale: 1.05
+                                }}
+                                transition={{
+                                    duration: 0.5
+                                }}
                             />
 
                             <div className="p-6">
@@ -144,146 +297,262 @@ const Home = () => {
                                     electrification projects.
                                 </p>
 
-                                <a href="/services/electrical-systems" className="expertise-link">
+                                <motion.a
+                                    href="/services/electrical-systems"
+                                    className="expertise-link"
+                                    whileHover={{ x: 4 }}
+                                >
                                     VIEW <span>›</span>
-                                </a>
+                                </motion.a>
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>
-            </section>
-            {/* ===== About Firenor Section ===== */}
-            <section className="about-section">
+            </motion.section>
+
+            <motion.section
+                className="about-section"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8 }}
+            >
 
                 {/* LEFT */}
-                <div className="about-left">
+                <motion.div
+                    className="about-left"
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.9,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                >
                     <div className="about-content">
                         <h2 className="section-title text-white">About Firenor</h2>
                         <div className="section-underline"></div>
 
-                        <p className="about-text mt-4">
+                        <motion.p
+                            className="about-text mt-4"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2, duration: 0.6 }}
+                        >
                             Firenor Middle East is a well-established engineering company with
                             its roots from the Scandinavian region, internationally recognized
                             for engineering excellence, Project Management skills, innovation,
                             and a strong safety culture. Building on this heritage, we deliver
                             reliable and integrated engineering solutions to clients across
                             the Oil & Gas, Industrial, Power, and Offshore sectors.
-                        </p>
+                        </motion.p>
 
-                        <p className="about-text">
+                        <motion.p
+                            className="about-text"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.35, duration: 0.6 }}
+                        >
                             Our core focus lies in Fire Protection & Safety and Industrial
                             Automation, supported by comprehensive capabilities in electrical,
                             instrumentation, and control systems. We specialize in designing
                             and delivering customized solutions that enhance operational
                             safety, reliability, and efficiency in complex and high-risk
                             environments.
-                        </p>
+                        </motion.p>
 
-                        <p className="about-text">
+                        <motion.p
+                            className="about-text"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.5, duration: 0.6 }}
+                        >
                             With over 25 years of regional experience and more than 350
                             successfully executed projects across the Middle East, India, and
                             Africa, Firenor Middle East has earned a reputation for quality,
                             technical excellence, and dependable project delivery.
-                        </p>
+                        </motion.p>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* RIGHT */}
-                <div className="about-right">
+                <motion.div
+                    className="about-right"
+                    initial={{ opacity: 0, x: 60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.9,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                >
                     <h3 className="services-title">Services offered.</h3>
 
-                    <div className="service-item">
-                        <FileTextOutlined /> Basic & Detailed Design
-                    </div>
-                    <div className="service-item">
-                        <SettingOutlined /> Engineering
-                    </div>
-                    <div className="service-item">
-                        <ProjectOutlined /> Project Management
-                    </div>
-                    <div className="service-item">
-                        <ToolOutlined /> Field Installation
-                    </div>
-                    <div className="service-item">
-                        <CheckCircleOutlined /> Commissioning and Start-up
-                    </div>
-                    <div className="service-item">
-                        <FileTextOutlined /> Customer Training
-                    </div>
-                    <div className="service-item">
-                        <FileTextOutlined /> Documentation
-                    </div>
-                    <div className="service-item">
-                        <ProjectOutlined /> After Project Support
-                    </div>
-                    <div className="service-item">
-                        <SettingOutlined /> Annual Maintenance Contracts
-                    </div>
-                    <div className="service-item">
-                        <SettingOutlined /> Product & Control System Solutions
-                    </div>
-                    <div className="service-item">
-                        <ToolOutlined /> Control Panel Assy
-                    </div>
-                </div>
-            </section>
-            {/* ===== Trusted Clients Section ===== */}
-            <section className="py-16 bg-white">
+                    {[
+                        { icon: <FileTextOutlined />, text: "Basic & Detailed Design" },
+                        { icon: <SettingOutlined />, text: "Engineering" },
+                        { icon: <ProjectOutlined />, text: "Project Management" },
+                        { icon: <ToolOutlined />, text: "Field Installation" },
+                        { icon: <CheckCircleOutlined />, text: "Commissioning and Start-up" },
+                        { icon: <FileTextOutlined />, text: "Customer Training" },
+                        { icon: <FileTextOutlined />, text: "Documentation" },
+                        { icon: <ProjectOutlined />, text: "After Project Support" },
+                        { icon: <SettingOutlined />, text: "Annual Maintenance Contracts" },
+                        { icon: <SettingOutlined />, text: "Product & Control System Solutions" },
+                        { icon: <ToolOutlined />, text: "Control Panel Assy" },
+                    ].map((item, index) => (
+                        <motion.div
+                            key={index}
+                            className="service-item"
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: index * 0.06,
+                                duration: 0.5,
+                            }}
+                            whileHover={{
+                                x: 6,
+                            }}
+                        >
+                            {item.icon} {item.text}
+                        </motion.div>
+                    ))}
+                </motion.div>
+
+            </motion.section>
+
+            <motion.section
+                className="py-16 bg-white"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
 
                     {/* Header */}
                     <div className="clients-header">
-                        <div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: -40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
                             <h2 className="clients-title">
                                 Trusted by Industry Leaders & Clients
                             </h2>
-                            <div className="clients-underline"></div>
-                        </div>
 
-                        <Link to='/clients' className="view-all-btn">View All</Link>
+                            <div className="clients-underline"></div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <Link to="/clients" className="view-all-btn">
+                                View All
+                            </Link>
+                        </motion.div>
+
                     </div>
 
                     {/* Logos */}
                     <div className="clients-grid">
-                        <div className="client-logo">
-                            <img src="/images/clients/client-1.png" alt="Client 1" />
-                        </div>
-                        <div className="client-logo">
-                            <img src="/images/clients/client-2.png" alt="Client 2" />
-                        </div>
-                        <div className="client-logo">
-                            <img src="/images/clients/client-3.png" alt="Client 3" />
-                        </div>
-                        <div className="client-logo">
-                            <img src="/images/clients/client-4.png" alt="Client 4" />
-                        </div>
-                        <div className="client-logo">
-                            <img src="/images/clients/client-5.png" alt="Client 5" />
-                        </div>
-                        <div className="client-logo">
-                            <img src="/images/clients/client-6.png" alt="Client 6" />
-                        </div>
+
+                        {[
+                            "/images/clients/client-1.png",
+                            "/images/clients/client-2.png",
+                            "/images/clients/client-3.png",
+                            "/images/clients/client-4.png",
+                            "/images/clients/client-5.png",
+                            "/images/clients/client-6.png",
+                        ].map((logo, index) => (
+                            <motion.div
+                                key={index}
+                                className="client-logo"
+                                initial={{
+                                    opacity: 0,
+                                    y: 30,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    delay: index * 0.1,
+                                    duration: 0.6,
+                                }}
+                                whileHover={{
+                                    scale: 1.05,
+                                    y: -4,
+                                }}
+                            >
+                                <img
+                                    src={logo}
+                                    alt={`Client ${index + 1}`}
+                                />
+                            </motion.div>
+                        ))}
+
                     </div>
 
                 </div>
-            </section>
+            </motion.section>
 
 
-            {/* ===== Core Strengths ===== */}
-            <section className="py-16 bg-white">
+            <motion.section
+                className="py-16 bg-white"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
-                    <div className="">
-                        <h2 className="core-section-title">
+
+                    <div>
+
+                        <motion.h2
+                            className="core-section-title"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.7 }}
+                        >
                             Explore our core strengths
-                        </h2>
-                        <div className="core-underline"></div>
+                        </motion.h2>
+
+                        <motion.div
+                            className="core-underline"
+                            initial={{ scaleX: 0 }}
+                            whileInView={{ scaleX: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            style={{ transformOrigin: "left" }}
+                        />
 
                         {/* Grid */}
                         <div className="flex mt-8">
 
                             {/* Left info */}
-                            <div className="core-card core-info basis-[50%]">
+                            <motion.div
+                                className="core-card core-info basis-[50%]"
+                                initial={{ opacity: 0, x: -60 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: [0.22, 1, 0.36, 1]
+                                }}
+                            >
                                 <div className="core-shape shape-1"></div>
                                 <div className="core-shape shape-2"></div>
                                 <div className="core-shape shape-3"></div>
@@ -291,49 +560,126 @@ const Home = () => {
 
                                 <div className="core-info-content">
                                     <h3>We are energy</h3>
+
                                     <p>
                                         Over 25 years experience & knowledge of international
                                         industrial systems, dedicated to provide the best
                                         economical solutions.
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
 
                             {/* Right image */}
-                            <div className="core-card basis-[50%]">
-                                <img src="/images/home/core-1.jpg" alt="" />
+                            <motion.div
+                                className="core-card basis-[50%]"
+                                initial={{ opacity: 0, x: 60 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.8,
+                                    ease: [0.22, 1, 0.36, 1]
+                                }}
+                                whileHover={{ y: -6 }}
+                            >
+                                <motion.img
+                                    src="/images/home/core-1.jpg"
+                                    alt=""
+                                    whileHover={{ scale: 1.04 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+
                                 <div className="core-arrow">
                                     <ArrowRightOutlined />
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* Bottom images */}
                         <div className="core-bottom flex">
-                            <div className="core-card basis-[40%]">
-                                <img src="/images/home/core-2.jpg" alt="" />
-                                <div className="core-arrow">
-                                    <ArrowRightOutlined />
-                                </div>
-                            </div>
 
-                            <div className="core-card basis-[30%]">
-                                <img src="/images/home/core-3.jpg" alt="" />
-                                <div className="core-arrow">
-                                    <ArrowRightOutlined />
-                                </div>
-                            </div>
+                            <motion.div
+                                className="core-card basis-[40%]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    delay: 0.1,
+                                    duration: 0.7
+                                }}
+                                whileHover={{ y: -6 }}
+                            >
+                                <motion.img
+                                    src="/images/home/core-2.jpg"
+                                    alt=""
+                                    whileHover={{ scale: 1.04 }}
+                                    transition={{ duration: 0.5 }}
+                                />
 
-                            <div className="core-card basis-[30%]">
-                                <img src="/images/home/core-4.jpg" alt="" />
                                 <div className="core-arrow">
                                     <ArrowRightOutlined />
                                 </div>
-                            </div>
+                            </motion.div>
+
+                            <motion.div
+                                className="core-card basis-[30%]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    delay: 0.25,
+                                    duration: 0.7
+                                }}
+                                whileHover={{ y: -6 }}
+                            >
+                                <motion.img
+                                    src="/images/home/core-3.jpg"
+                                    alt=""
+                                    whileHover={{ scale: 1.04 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+
+                                <div className="core-arrow">
+                                    <ArrowRightOutlined />
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                className="core-card basis-[30%]"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    delay: 0.4,
+                                    duration: 0.7
+                                }}
+                                whileHover={{ y: -6 }}
+                            >
+                                <motion.img
+                                    src="/images/home/core-4.jpg"
+                                    alt=""
+                                    whileHover={{ scale: 1.04 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+
+                                <div className="core-arrow">
+                                    <ArrowRightOutlined />
+                                </div>
+                            </motion.div>
+
                         </div>
                     </div>
+
                     {/* ===== Certifications ===== */}
-                    <div className="cert-section">
+                    <motion.div
+                        className="cert-section"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.2
+                        }}
+                    >
                         <h3 className="cert-title">Our Certifications</h3>
 
                         <p className="cert-desc">
@@ -346,10 +692,22 @@ const Home = () => {
                             NEBOSH, BS 6387, IEC 60331, EN 50200, CE, FM, UL, DNV, BV, IMO, NFPA
                         </p>
 
-                        <button className="cert-btn mt-5">Contact us</button>
-                    </div>
+                        <motion.button
+                            className="cert-btn mt-5"
+                            whileHover={{
+                                y: -2,
+                                scale: 1.02
+                            }}
+                            whileTap={{
+                                scale: 0.98
+                            }}
+                        >
+                            Contact us
+                        </motion.button>
+                    </motion.div>
+
                 </div>
-            </section>
+            </motion.section>
 
         </>
 
