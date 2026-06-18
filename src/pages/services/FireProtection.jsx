@@ -37,12 +37,12 @@ const FireProtection = () => {
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
                                     Engineering & Risk Analysis
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                     <li>Fire risk assessments</li>
                                     <li>Heat radiation & worst fire case assessments</li>
                                     <li>Design and detailed engineering</li>
                                     <li>Advanced design and engineering solutions</li>
-                                </ol>
+                                </ul>
                             </div>
                         </div>
 
@@ -60,12 +60,12 @@ const FireProtection = () => {
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
                                     System Analysis & Execution
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                     <li>Hydraulic analysis and calculations</li>
                                     <li>Procurement and supply</li>
                                     <li>Installation and commissioning</li>
                                     <li>Experienced installation & commissioning team</li>
-                                </ol>
+                                </ul>
                             </div>
                         </div>
 
@@ -83,12 +83,12 @@ const FireProtection = () => {
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
                                     Compliance & Project Delivery
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                     <li>Statutory / local authority approvals</li>
                                     <li>Turnkey services</li>
                                     <li>Project consultancy services</li>
                                     <li>Proven project management skills</li>
-                                </ol>
+                                </ul>
                             </div>
                         </div>
 
@@ -106,11 +106,11 @@ const FireProtection = () => {
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
                                     Training & Lifecycle Support
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                     <li>Training and documentation</li>
                                     <li>Maintenance and after-sales support</li>
                                     <li>After-sales support & maintenance services</li>
-                                </ol>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const FireProtection = () => {
                             </h3>
 
                             {/* List */}
-                            <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-600">
+                            <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                 <li>Yard Fire hydrant system</li>
                                 <li>Indoor hydrant system</li>
                                 <li>Deluge water spray system (High velocity & Medium velocity)</li>
@@ -150,7 +150,7 @@ const FireProtection = () => {
                                 <li>Pre-action sprinkler system</li>
                                 <li>Low, medium and high expansion Foam system</li>
                                 <li>Foam water spray and sprinkler system</li>
-                            </ol>
+                            </ul>
 
                             {/* Pattern overlay */}
                             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/images/pattern.png')] bg-cover"></div>
@@ -170,12 +170,12 @@ const FireProtection = () => {
                             </h3>
 
                             {/* List */}
-                            <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-600">
+                            <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
                                 <li>FM200 system</li>
                                 <li>Novec system</li>
                                 <li>Inert gas system</li>
                                 <li>CO2 system</li>
-                            </ol>
+                            </ul>
 
                             {/* Pattern overlay */}
                             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/images/pattern.png')] bg-cover"></div>

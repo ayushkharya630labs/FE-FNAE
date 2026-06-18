@@ -18,8 +18,7 @@ const ElectricalSystems = () => {
             <section className="py-16 bg-white">
                 <div className="container-main">
                     <h3 className="text-gray-600 mb-6">
-                        The scope of work we undertake typically include the following,
-                        individually or collectively
+                        Our core expertise includes design, detailed Engineering, equipment sizing/selection, procurement, installation and commissioning of,
                     </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -27,7 +26,7 @@ const ElectricalSystems = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-1.jpg"
+                                    src="/images/services/ElectricalSystems/service-1.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -35,14 +34,14 @@ const ElectricalSystems = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Engineering & Risk Analysis
+                                    Power Distribution
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Fire risk assessments</li>
-                                    <li>Heat radiation & worst fire case assessments</li>
-                                    <li>Design and detailed engineering</li>
-                                    <li>Advanced design and engineering solutions</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>MV Distribution Transformers</li>
+                                    <li>RMUs</li>
+                                    <li>LV Cables & Busbar Systems</li>
+                                    <li>Earthing System</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -50,7 +49,7 @@ const ElectricalSystems = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-2.jpg"
+                                    src="/images/services/ElectricalSystems/service-2.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -58,14 +57,14 @@ const ElectricalSystems = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    System Analysis & Execution
+                                   Switchgear & Control
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Hydraulic analysis and calculations</li>
-                                    <li>Procurement and supply</li>
-                                    <li>Installation and commissioning</li>
-                                    <li>Experienced installation & commissioning team</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>MV & LV Switchgear Panels</li>
+                                    <li>Switchgear and Generator Control Panels</li>
+                                    <li>Synchronization Panels</li>
+                                    <li>Auto Transfer System (ATS)</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -73,7 +72,7 @@ const ElectricalSystems = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-3.jpg"
+                                    src="/images/services/ElectricalSystems/service-3.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -81,14 +80,12 @@ const ElectricalSystems = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Compliance & Project Delivery
+                                    Motor & Drive Solutions
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Statutory / local authority approvals</li>
-                                    <li>Turnkey services</li>
-                                    <li>Project consultancy services</li>
-                                    <li>Proven project management skills</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Motor Control Centers (MCC)</li>
+                                    <li>VFDs, Soft Starters, Star-Delta & DOL</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -96,21 +93,20 @@ const ElectricalSystems = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-4.jpg"
+                                    src="/images/services/ElectricalSystems/service-4.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
                             </div>
-
+                            
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Training & Lifecycle Support
+                                    Power Backup & Reliability
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Training and documentation</li>
-                                    <li>Maintenance and after-sales support</li>
-                                    <li>After-sales support & maintenance services</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Diesel Generators</li>
+                                    <li>AC & DC UPS Systems</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -118,7 +114,7 @@ const ElectricalSystems = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-4.jpg"
+                                    src="/images/services/ElectricalSystems/service-5.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -126,13 +122,12 @@ const ElectricalSystems = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Training & Lifecycle Support
+                                    Specialized & Hazardous Area Solutions
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Training and documentation</li>
-                                    <li>Maintenance and after-sales support</li>
-                                    <li>After-sales support & maintenance services</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Solar Power for Hazardous Areas</li>
+                                    <li>Industrial & Hazardous Area Lighting</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

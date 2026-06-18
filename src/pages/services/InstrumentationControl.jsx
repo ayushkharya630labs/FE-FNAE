@@ -26,7 +26,7 @@ const InstrumentationControl = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-1.jpg"
+                                    src="/images/services/InstrumentationControl/service-1.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -34,14 +34,15 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Engineering & Risk Analysis
+                                    Engineering & Design
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Fire risk assessments</li>
-                                    <li>Heat radiation & worst fire case assessments</li>
-                                    <li>Design and detailed engineering</li>
-                                    <li>Advanced design and engineering solutions</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Review of PFDs and P&IDs</li>
+                                    <li>Preparation of Instrument Index</li>
+                                    <li>Development of Instrument Specifications & Data Sheets</li>
+                                    <li>Instrument Loop Design</li>
+                                    <li>Selection of instruments to suit process applications and area classification</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -49,7 +50,7 @@ const InstrumentationControl = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-2.jpg"
+                                    src="/images/services/InstrumentationControl/service-2.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -57,14 +58,15 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    System Analysis & Execution
+                                    Layout, Installation & Infrastructure
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Hydraulic analysis and calculations</li>
-                                    <li>Procurement and supply</li>
-                                    <li>Installation and commissioning</li>
-                                    <li>Experienced installation & commissioning team</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Instrument, JB, cabling & control room layout</li>
+                                    <li>Installation of instrument systems for process plants</li>
+                                    <li>Installation of local panels, cabinets & gauge boards</li>
+                                    <li>Installation of main air line piping and air distribution headers</li>
+                                    <li>Impulse piping and SS tubing</li>
+                                </ul>
                             </div>
                         </div>
 
@@ -72,7 +74,7 @@ const InstrumentationControl = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-3.jpg"
+                                    src="/images/services/InstrumentationControl/service-3.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -80,14 +82,12 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Compliance & Project Delivery
+                                    Testing, Integration & Commissioning
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Statutory / local authority approvals</li>
-                                    <li>Turnkey services</li>
-                                    <li>Project consultancy services</li>
-                                    <li>Proven project management skills</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Calibration and loop testing</li>
+                                    <li>Integration & system testing</li>
+                               </ul>
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@ const InstrumentationControl = () => {
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-4.jpg"
+                                    src="/images/services/InstrumentationControl/service-4.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -103,13 +103,15 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Training & Lifecycle Support
+                                    Communication, Safety & Control Systems
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Training and documentation</li>
-                                    <li>Maintenance and after-sales support</li>
-                                    <li>After-sales support & maintenance services</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>CCTV systems</li>
+                                    <li>PA/GA systems</li>
+                                    <li>Telecommunication systems</li>
+                                    <li>Implementation of fiber optic network systems</li>
+                                    <li>Fire & Gas systems</li>
+                               </ul>
                             </div>
                         </div>
                     </div>
@@ -158,16 +160,16 @@ const InstrumentationControl = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                   <h3 className="text-gray-600 mb-6">
+                    <h3 className="text-gray-600 mb-6">
                         Our control system capabilities include design and implementation of
                     </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* Card 1 */}
+                        {/* Card 5 */}
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-1.jpg"
+                                    src="/images/services/InstrumentationControl/service-5.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -175,22 +177,21 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Engineering & Risk Analysis
+                                    Control & Automation
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Fire risk assessments</li>
-                                    <li>Heat radiation & worst fire case assessments</li>
-                                    <li>Design and detailed engineering</li>
-                                    <li>Advanced design and engineering solutions</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>PLC Based Control System</li>
+                                    <li>SCADA Based Monitoring & Control System</li>
+                                    <li>Emergency Shutdown System</li>
+                               </ul>
                             </div>
                         </div>
 
-                        {/* Card 2 */}
+                        {/* Card 6 */}
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-2.jpg"
+                                    src="/images/services/InstrumentationControl/service-6.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -198,22 +199,20 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    System Analysis & Execution
+                                    Safety & Surveillance
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Hydraulic analysis and calculations</li>
-                                    <li>Procurement and supply</li>
-                                    <li>Installation and commissioning</li>
-                                    <li>Experienced installation & commissioning team</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Fire & Gas Detection System</li>
+                                    <li>CCTV Monitoring & Surveillance System</li>
+                               </ul>
                             </div>
                         </div>
 
-                        {/* Card 3 */}
+                        {/* Card 7 */}
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-3.jpg"
+                                    src="/images/services/InstrumentationControl/service-7.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -221,22 +220,21 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Compliance & Project Delivery
+                                    Terminal & Asset Management
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Statutory / local authority approvals</li>
-                                    <li>Turnkey services</li>
-                                    <li>Project consultancy services</li>
-                                    <li>Proven project management skills</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Terminal Automation System</li>
+                                    <li>Terminal Business Management System</li>
+                                    <li>Tank Farm Inventory Management System</li>
+                               </ul>
                             </div>
                         </div>
 
-                        {/* Card 4 */}
+                        {/* Card 8 */}
                         <div className="border border-gray-200 bg-white">
                             <div className="relative">
                                 <img
-                                    src="/images/services/service-4.jpg"
+                                    src="/images/services/InstrumentationControl/service-8.jpg"
                                     alt=""
                                     className="w-full h-48 object-cover"
                                 />
@@ -244,13 +242,13 @@ const InstrumentationControl = () => {
 
                             <div className="p-6">
                                 <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Training & Lifecycle Support
+                                    Pipeline & Valve Solutions
                                 </h3>
-                                <ol className="list-decimal pl-4 space-y-1 text-sm text-gray-500">
-                                    <li>Training and documentation</li>
-                                    <li>Maintenance and after-sales support</li>
-                                    <li>After-sales support & maintenance services</li>
-                                </ol>
+                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                                    <li>Pipeline Monitoring & Leak Detection System</li>
+                                    <li>Telemetry & Remote Communication System</li>
+                                    <li>Manual Valves Retrofitting & Automation Solutions</li>
+                               </ul>
                             </div>
                         </div>
                     </div>

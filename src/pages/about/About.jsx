@@ -1,6 +1,39 @@
 import PageHero from "../../components/PageHero/PageHero";
 
 const About = () => {
+    const locations = [
+        {
+            name: "USA",
+            value: "120+ Projects",
+            left: "24%",
+            top: "42%",
+        },
+        {
+            name: "GCC Countries",
+            value: "200+ Projects",
+            left: "60%",
+            top: "40%",
+        },
+        {
+            name: "India",
+            value: "90+ Projects",
+            left: "67%",
+            top: "52%",
+        },
+        {
+            name: "Middle East",
+            value: "150+ Projects",
+            left: "57%",
+            top: "56%",
+        },
+        {
+            name: "Africa",
+            value: "75+ Projects",
+            left: "53%",
+            top: "76%",
+        },
+    ];
+
     return (
         <>
             {/* ================= ABOUT HERO ================= */}
@@ -8,7 +41,7 @@ const About = () => {
                 breadcrumb="Home"
                 current="About Us"
                 title="About Us"
-                description="Firenor is a Norwegian-based company with an international presence, delivering engineered fire protection and safety solutions to the energy, oil & gas, industrial, and renewable sectors since 1953."
+                description="Firenor Middle East is a well-established engineering company with its roots from the Scandinavian region, internationally recognized for engineering excellence, Project Management skills, innovation, and a strong safety culture. Building on this heritage, we deliver reliable and integrated engineering solutions to clients across the Oil & Gas, Industrial, Power, and Offshore sectors. "
                 leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/about/about-hero.jpg"
             />
@@ -23,17 +56,12 @@ const About = () => {
                         <div className="section-underline mb-6"></div>
 
                         <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                            Founded in Norway in 1953, Firenor has built a strong reputation for delivering high-end engineered fire protection and safety systems to clients worldwide. With decades of industry experience, we help organizations mitigate risk through innovative, reliable, and standards-compliant fire safety solutions.
-                        </p>
-
-                        <p className="text-sm text-gray-600 leading-relaxed">
-                            Our expertise spans the complete project lifecycle, from concept development and engineering design to manufacturing, testing, installation, commissioning, and long-term maintenance support. This integrated approach enables us to provide tailored solutions that meet the demanding requirements of industrial, energy, offshore, and infrastructure projects.
-
+                            Our core focus lies in Fire Protection & Safety and Industrial Automation, supported by comprehensive capabilities in electrical, instrumentation, and control systems. We specialize in designing and delivering customized solutions that enhance operational safety, reliability, and efficiency in complex and high-risk environments.
                         </p>
                     </div>
 
                     {/* Right image */}
-                    <div>
+                    <div className="" style={{ height: "58vh" }}>
                         <img
                             src="/images/about/story-1.jpg"
                             alt="Our Story"
@@ -46,7 +74,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2">
 
                     {/* Image */}
-                    <div>
+                    <div className="" style={{ height: "58vh" }}>
                         <img
                             src="/images/about/story-2.jpg"
                             alt="Industry"
@@ -57,18 +85,16 @@ const About = () => {
                     {/* Teal content */}
                     <div className="bg-[#47A5AE] text-white p-16 flex items-center">
                         <p className="text-sm leading-relaxed max-w-xl">
-                            Firenor designs, engineers, manufactures, and supplies comprehensive fire safety systems for projects in the energy, oil & gas, marine, industrial, and renewable sectors. Our portfolio includes gaseous suppression systems, sprinkler systems, foam systems, water mist systems, hydrants, utility stations, hose reels, and specialized firefighting solutions.
-                            <br/>
-                            By combining Norwegian engineering expertise with global project experience, we deliver reliable systems that protect people, assets, and operations in some of the world's most demanding environments.
+                            With over 25 years of regional experience and more than 350 successfully executed projects across the Middle East, India, and Africa, Firenor Middle East has earned a reputation for quality, technical excellence, and dependable project delivery. Our solutions are driven by right engineering values and a customer-centric approach, ensuring long-term partnerships and sustainable value for our clients.
+
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className="stats-section relative py-16 my-12">
+            {/* <section className="stats-section relative py-16 my-12">
                 <div className="px-16">
 
-                    {/* Stats */}
                     <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-12">
 
                         <div>
@@ -93,6 +119,27 @@ const About = () => {
                         </div>
 
                     </div>
+                </div>
+            </section> */}
+
+            {/* ================= GLOBAL PRESENCE ================= */}
+            <section className="py-20 bg-[#f8f8f8]">
+                <div className="max-w-7xl mx-auto px-6 lg:px-16">
+
+                    {/* Heading */}
+                    <h2 className="section-title mb-2">
+                        Our Global Presence
+                    </h2>
+
+                    {/* Map Image */}
+                    <div className="flex justify-center mt-10">
+                        <img
+                            src="/images/about/map.png"
+                            alt="Global Presence"
+                            className="w-full max-w-[800px] h-auto object-contain"
+                        />
+                    </div>
+
                 </div>
             </section>
         </>

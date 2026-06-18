@@ -6,6 +6,9 @@ import About from "../pages/about/About";
 import FireProtection from "../pages/services/FireProtection";
 import InstrumentationControl from "../pages/services/InstrumentationControl";
 import ElectricalSystems from "../pages/services/ElectricalSystems";
+// Business Stream
+import BusinessStream from "../pages/business-stream/BusinessStream";
+import DelugeSystemsMultiZone from "../pages/business-stream-details/DelugeSystemsMultiZone";
 // clients
 import Clients from "../pages/clients/Clients";
 // core strengths
@@ -30,6 +33,9 @@ const AppRoutes = () => {
           <Route path="/services/fire-protection" element={<FireProtection />} />
           <Route path="/services/instrumentation-control" element={<InstrumentationControl />} />
           <Route path="/services/electrical-systems" element={<ElectricalSystems />} />
+          {/* Business Stream */}
+          <Route path="/business-stream" element={<BusinessStream />} />
+          <Route path="/business-stream/deluge-systems-multi-zone" element={<DelugeSystemsMultiZone />} />
           {/* Clients */}
           <Route path="/clients" element={<Clients />} />
           {/* Core Strengths */}

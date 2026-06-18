@@ -51,6 +51,11 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
+            {/* Business Stream */}
+            <NavLink to="/business-stream" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+              Business Stream
+            </NavLink>
+            {/* Clients */}
 
             <NavLink to="/clients" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Clients
@@ -98,6 +103,9 @@ const Header = () => {
             </NavLink>
           </div>
 
+          <NavLink to="/business-stream" onClick={() => setOpen(false)}>
+            Business Stream
+          </NavLink>
           <NavLink to="/clients" onClick={() => setOpen(false)}>Clients</NavLink>
           <NavLink to="/core-strengths" onClick={() => setOpen(false)}>Core Strengths</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink>
