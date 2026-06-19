@@ -1,7 +1,134 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import PageHero from "../../components/PageHero/PageHero";
 
 const InstrumentationControl = () => {
+
+    const expertiseCards = [
+        {
+            image: "/images/services/InstrumentationControl/service-1.jpg",
+            title: "Engineering & Design",
+            items: [
+                "Review of PFDs and P&IDs",
+                "Preparation of Instrument Index",
+                "Development of Instrument Specifications & Data Sheets",
+                "Instrument Loop Design",
+                "Selection of instruments to suit process applications and area classification",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-2.jpg",
+            title: "Layout, Installation & Infrastructure",
+            items: [
+                "Instrument, JB, cabling & control room layout",
+                "Installation of instrument systems for process plants",
+                "Installation of local panels, cabinets & gauge boards",
+                "Installation of main air line piping and air distribution headers",
+                "Impulse piping and SS tubing",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-3.jpg",
+            title: "Testing, Integration & Commissioning",
+            items: [
+                "Calibration and loop testing",
+                "Integration & system testing",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-4.jpg",
+            title: "Communication, Safety & Control Systems",
+            items: [
+                "CCTV systems",
+                "PA/GA systems",
+                "Telecommunication systems",
+                "Implementation of fiber optic network systems",
+                "Fire & Gas systems",
+            ],
+        },
+    ];
+
+    const controlSystemCards = [
+        {
+            image: "/images/services/InstrumentationControl/service-5.jpg",
+            title: "Control & Automation",
+            items: [
+                "PLC Based Control System",
+                "SCADA Based Monitoring & Control System",
+                "Emergency Shutdown System",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-6.jpg",
+            title: "Safety & Surveillance",
+            items: [
+                "Fire & Gas Detection System",
+                "CCTV Monitoring & Surveillance System",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-7.jpg",
+            title: "Terminal & Asset Management",
+            items: [
+                "Terminal Automation System",
+                "Terminal Business Management System",
+                "Tank Farm Inventory Management System",
+            ],
+        },
+        {
+            image: "/images/services/InstrumentationControl/service-8.jpg",
+            title: "Pipeline & Valve Solutions",
+            items: [
+                "Pipeline Monitoring & Leak Detection System",
+                "Telemetry & Remote Communication System",
+                "Manual Valves Retrofitting & Automation Solutions",
+            ],
+        },
+    ];
+
+
+    const ServiceCard = ({ card, index }) => (
+        <motion.div
+            className="border border-gray-200 bg-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+            }}
+            whileHover={{
+                y: -6,
+            }}
+        >
+            <div className="relative overflow-hidden">
+                <motion.img
+                    src={card.image}
+                    alt=""
+                    className="w-full h-48 object-cover"
+                    whileHover={{
+                        scale: 1.04,
+                    }}
+                    transition={{
+                        duration: 0.4,
+                    }}
+                />
+            </div>
+
+            <div className="p-6">
+                <h3 className="text-base font-medium text-gray-800 mb-3">
+                    {card.title}
+                </h3>
+
+                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
+                    {card.items.map((item, i) => (
+                        <li key={i}>{item}</li>
+                    ))}
+                </ul>
+            </div>
+        </motion.div>
+    );
+
     return (
         <>
             {/* ================= HERO ================= */}
@@ -17,240 +144,125 @@ const InstrumentationControl = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <h3 className="text-gray-600 mb-6">
-                        Our core expertise included
-                    </h3>
+                    <motion.h3
+                        className="text-gray-600 mb-6"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >  Our core expertise included</motion.h3>
+
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* Card 1 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-1.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Engineering & Design
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Review of PFDs and P&IDs</li>
-                                    <li>Preparation of Instrument Index</li>
-                                    <li>Development of Instrument Specifications & Data Sheets</li>
-                                    <li>Instrument Loop Design</li>
-                                    <li>Selection of instruments to suit process applications and area classification</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-2.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Layout, Installation & Infrastructure
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Instrument, JB, cabling & control room layout</li>
-                                    <li>Installation of instrument systems for process plants</li>
-                                    <li>Installation of local panels, cabinets & gauge boards</li>
-                                    <li>Installation of main air line piping and air distribution headers</li>
-                                    <li>Impulse piping and SS tubing</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-3.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Testing, Integration & Commissioning
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Calibration and loop testing</li>
-                                    <li>Integration & system testing</li>
-                               </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-4.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Communication, Safety & Control Systems
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>CCTV systems</li>
-                                    <li>PA/GA systems</li>
-                                    <li>Telecommunication systems</li>
-                                    <li>Implementation of fiber optic network systems</li>
-                                    <li>Fire & Gas systems</li>
-                               </ul>
-                            </div>
-                        </div>
+                        {expertiseCards.map((card, index) => (
+                            <ServiceCard
+                                key={index}
+                                card={card}
+                                index={index}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
 
             {/* ================= CONTROL SYSTEMS BANNER ================= */}
-            <section className="bg-[#4FA3A6] py-14">
+            <motion.section
+                className="bg-[#4FA3A6] py-14"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main text-center text-white">
 
                     {/* Title */}
-                    <h2 className="text-3xl md:text-4xl font-light mb-4">
+                    <motion.h2
+                        className="text-3xl md:text-4xl font-light mb-4"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.7,
+                            delay: 0.1
+                        }}
+                    >
                         Control Systems & Integration
-                    </h2>
+                    </motion.h2>
 
                     {/* Description */}
-                    <p className="text-sm md:text-base text-white/90 max-w-3xl mx-auto mb-6">
+                    <motion.p
+                        className="text-sm md:text-base text-white/90 max-w-3xl mx-auto mb-6"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.7,
+                            delay: 0.25
+                        }}
+                    >
                         Firenor is proficient in system integration of Industrial and Safety Automation Systems from...
-                    </p>
+                    </motion.p>
 
                     {/* Companies List */}
-                    <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-red-500 rounded-full"></span>
-                            Rockwell/Allen Bradley, USA
-                        </span>
+                    <motion.div
+                        className="flex flex-wrap justify-center gap-6 text-sm md:text-base"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.4
+                        }}
+                    >
+                        {[
+                            "Rockwell/Allen Bradley, USA",
+                            "Siemens AG, Germany",
+                            "Emerson",
+                            "Honeywell Automation",
+                        ].map((company, index) => (
+                            <motion.span
+                                key={company}
+                                className="flex items-center gap-2"
+                                initial={{ opacity: 0, y: 15 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: 0.5 + index * 0.1,
+                                }}
+                                whileHover={{
+                                    y: -2,
+                                }}
+                            >
+                                <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                                {company}
+                            </motion.span>
+                        ))}
+                    </motion.div>
 
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-red-500 rounded-full"></span>
-                            Siemens AG, Germany
-                        </span>
-
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-red-500 rounded-full"></span>
-                            Emerson
-                        </span>
-
-                        <span className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-red-500 rounded-full"></span>
-                            Honeywell Automation
-                        </span>
-                    </div>
                 </div>
-            </section>
+            </motion.section>
 
             {/* ================= SCOPE OF WORK ================= */}
             <section className="py-16 bg-white">
                 <div className="container-main">
-                    <h3 className="text-gray-600 mb-6">
-                        Our control system capabilities include design and implementation of
-                    </h3>
+                    <motion.h3
+                        className="text-gray-600 mb-6"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >Our control system capabilities include design and implementation of</motion.h3>
+
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* Card 5 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-5.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Control & Automation
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>PLC Based Control System</li>
-                                    <li>SCADA Based Monitoring & Control System</li>
-                                    <li>Emergency Shutdown System</li>
-                               </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 6 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-6.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Safety & Surveillance
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Fire & Gas Detection System</li>
-                                    <li>CCTV Monitoring & Surveillance System</li>
-                               </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 7 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-7.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Terminal & Asset Management
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Terminal Automation System</li>
-                                    <li>Terminal Business Management System</li>
-                                    <li>Tank Farm Inventory Management System</li>
-                               </ul>
-                            </div>
-                        </div>
-
-                        {/* Card 8 */}
-                        <div className="border border-gray-200 bg-white">
-                            <div className="relative">
-                                <img
-                                    src="/images/services/InstrumentationControl/service-8.jpg"
-                                    alt=""
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-
-                            <div className="p-6">
-                                <h3 className="text-base font-medium text-gray-800 mb-3">
-                                    Pipeline & Valve Solutions
-                                </h3>
-                                <ul className="list-disc marker:text-[#6C6D70] pl-5 space-y-2 text-sm text-gray-600">
-                                    <li>Pipeline Monitoring & Leak Detection System</li>
-                                    <li>Telemetry & Remote Communication System</li>
-                                    <li>Manual Valves Retrofitting & Automation Solutions</li>
-                               </ul>
-                            </div>
-                        </div>
+                        {controlSystemCards.map((card, index) => (
+                            <ServiceCard
+                                key={index}
+                                card={card}
+                                index={index}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import PageHero from "../../components/PageHero/PageHero";
 
 const FireProtection = () => {
@@ -15,16 +16,37 @@ const FireProtection = () => {
             />
 
             {/* ================= SCOPE OF WORK ================= */}
-            <section className="py-16 bg-white">
+            <motion.section
+                className="py-16 bg-white"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
-                    <h3 className="text-gray-600 mb-6">
-                        The scope of work we undertake typically include the following,
-                        individually or collectively
-                    </h3>
+                    <motion.h3
+                        className="text-gray-600 mb-6"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >   The scope of work we undertake typically include the following,
+                        individually or collectively</motion.h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Card 1 */}
-                        <div className="border border-gray-200 bg-white">
+                        <motion.div
+                            className="border border-gray-200 bg-white"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.6
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
                             <div className="relative">
                                 <img
                                     src="/images/services/service-1.jpg"
@@ -44,10 +66,21 @@ const FireProtection = () => {
                                     <li>Advanced design and engineering solutions</li>
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 2 */}
-                        <div className="border border-gray-200 bg-white">
+                        <motion.div
+                            className="border border-gray-200 bg-white"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.6
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
                             <div className="relative">
                                 <img
                                     src="/images/services/service-2.jpg"
@@ -67,10 +100,21 @@ const FireProtection = () => {
                                     <li>Experienced installation & commissioning team</li>
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 3 */}
-                        <div className="border border-gray-200 bg-white">
+                        <motion.div
+                            className="border border-gray-200 bg-white"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.6
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
                             <div className="relative">
                                 <img
                                     src="/images/services/service-3.jpg"
@@ -90,10 +134,21 @@ const FireProtection = () => {
                                     <li>Proven project management skills</li>
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 4 */}
-                        <div className="border border-gray-200 bg-white">
+                        <motion.div
+                            className="border border-gray-200 bg-white"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.6
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
                             <div className="relative">
                                 <img
                                     src="/images/services/service-4.jpg"
@@ -112,28 +167,51 @@ const FireProtection = () => {
                                     <li>After-sales support & maintenance services</li>
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </section>
+            </motion.section >
 
             {/* ================= DESIGN ENGINEERING SECTION ================= */}
-            <section className="py-16 bg-gray-100">
+            <motion.section
+                className="py-16 bg-gray-100"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
 
                     {/* Heading */}
-                   <h3 className="text-gray-600 mb-6">
-                        Design, Engineering, Implementation of solutions for Tankage Solutions -
-                    </h3>
+                    <motion.h3
+                        className="text-gray-600 mb-6"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                    >Design, Engineering, Implementation of solutions for Tankage Solutions -</motion.h3>
+
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                         {/* LEFT CARD */}
-                        <div className="stats-section bg-gray-200 p-8 rounded shadow-sm relative overflow-hidden">
+                        <motion.div
+                            className="stats-section bg-gray-200 p-8 rounded shadow-sm relative overflow-hidden"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.1
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
 
                             {/* Icon */}
                             <div className="mb-4">
-                               <img src="/images/services/icons/icon-1.png" className='w-15' alt="" />
+                                <img src="/images/services/icons/icon-1.png" className='w-15' alt="" />
                             </div>
 
                             {/* Title */}
@@ -154,10 +232,22 @@ const FireProtection = () => {
 
                             {/* Pattern overlay */}
                             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/images/pattern.png')] bg-cover"></div>
-                        </div>
+                        </motion.div>
 
                         {/* RIGHT CARD */}
-                        <div className="stats-section bg-gray-200 p-8 rounded shadow-sm relative overflow-hidden">
+                        <motion.div
+                            className="stats-section bg-gray-200 p-8 rounded shadow-sm relative overflow-hidden"
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.1
+                            }}
+                            whileHover={{
+                                y: -6
+                            }}
+                        >
 
                             {/* Icon */}
                             <div className="mb-4">
@@ -179,11 +269,11 @@ const FireProtection = () => {
 
                             {/* Pattern overlay */}
                             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/images/pattern.png')] bg-cover"></div>
-                        </div>
+                        </motion.div>
 
                     </div>
-                </div>
-            </section>
+                </div >
+            </motion.section >
         </>
     )
 }

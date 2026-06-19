@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PageHero from "../../components/PageHero/PageHero";
 
@@ -16,14 +17,31 @@ const CoreStrengths = () => {
             />
 
             {/* ================= SCOPE OF WORK ================= */}
-            <section className="py-16 bg-white">
+            <motion.section
+                className="py-16 bg-white"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.8 }}
+            >
                 <div className="container-main">
 
                     {/* Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                         {/* Card 1 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Fire Protection"
@@ -46,10 +64,21 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 2 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Instrumentation"
@@ -72,10 +101,21 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Card 3 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Electrical Systems"
@@ -98,9 +138,20 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* Card 4 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Electrical Systems"
@@ -123,9 +174,20 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* Card 5 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Electrical Systems"
@@ -148,9 +210,20 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                         {/* Card 6 */}
-                        <div className="expertise-card">
+                        <motion.div
+                            className="expertise-card"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.7
+                            }}
+                            whileHover={{
+                                y: -8
+                            }}
+                        >
                             <img
                                 src="/images/core-strengths/strengths-1.jpg"
                                 alt="Electrical Systems"
@@ -173,11 +246,11 @@ const CoreStrengths = () => {
                                     VIEW <span>›</span>
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>
-            </section>
+            </motion.section >
         </>
     )
 }

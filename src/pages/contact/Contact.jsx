@@ -1,11 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 
 const Contact = () => {
   return (
     <>
       {/* ================= CONTACT HERO ================= */}
-      <section className="contact-hero mb-10 py-sm-10">
+      <motion.section
+        className="contact-hero mb-10 py-sm-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         {/* Background layers */}
         <div className="contact-hero-bg-left"></div>
         <div className="contact-hero-bg-right"></div>
@@ -17,7 +23,11 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-md-16 gap-10 w-full">
 
               {/* LEFT CONTENT */}
-              <div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
                 {/* Breadcrumb */}
                 <p className="text-sm text-gray-300 mb-3">
                   Home / <span className="text-secondary">Contact Us</span>
@@ -37,7 +47,15 @@ const Contact = () => {
                 </p>
 
                 {/* Contact Info */}
-                <div className="space-y-2 text-sm text-gray-200">
+                <motion.div
+                  className="space-y-2 text-sm text-gray-200"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.4,
+                    duration: 0.6,
+                  }}
+                >
                   <div className="flex items-center gap-2">
                     <PhoneOutlined />
                     <span>+971 12345678</span>
@@ -47,19 +65,30 @@ const Contact = () => {
                     <MailOutlined />
                     <span>email@firenor.ae</span>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
 
               {/* RIGHT FORM */}
-              <div>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                }}
+              >
                 <form className="space-y-6 max-w-md ml-auto">
                   <div>
                     <label className="block text-sm text-gray-200 mb-1">
                       Name
                     </label>
-                    <input
+
+                    <motion.input
                       type="text"
                       className="contact-input"
+                      whileFocus={{
+                        scale: 1.01,
+                      }}
                     />
                   </div>
 
@@ -67,9 +96,13 @@ const Contact = () => {
                     <label className="block text-sm text-gray-200 mb-1">
                       Email
                     </label>
-                    <input
+
+                    <motion.input
                       type="email"
                       className="contact-input"
+                      whileFocus={{
+                        scale: 1.01,
+                      }}
                     />
                   </div>
 
@@ -77,26 +110,37 @@ const Contact = () => {
                     <label className="block text-sm text-gray-200 mb-1">
                       Message
                     </label>
-                    <textarea
+
+                    <motion.textarea
                       rows="4"
                       placeholder="Enter"
                       className="contact-input resize-none"
-                    ></textarea>
+                      whileFocus={{
+                        scale: 1.01,
+                      }}
+                    />
                   </div>
 
-                  <button
+                  <motion.button
                     type="submit"
                     className="contact-btn"
+                    whileHover={{
+                      y: -2,
+                      scale: 1.02,
+                    }}
+                    whileTap={{
+                      scale: 0.98,
+                    }}
                   >
                     Submit
-                  </button>
+                  </motion.button>
                 </form>
-              </div>
+              </motion.div>
 
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
