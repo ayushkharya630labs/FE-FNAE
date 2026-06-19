@@ -9,8 +9,42 @@ import {
     ArrowRightOutlined, ArrowUpOutlined
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 const Home = () => {
+
+    const heroSlides = [
+        {
+            image: "/images/home/slide-1.png",
+            subtitle: "For end-to-end solutions",
+            title: "Comprehensive Fire Safety Services, From Design to Maintenance",
+            link: "/services/fire-protection",
+        },
+        {
+            image: "/images/home/slide-2.png",
+            subtitle: "High-end fire safety solutions",
+            title: "Driving Safety Innovation Across Diverse Industries Worldwide",
+            link: "/systems",
+        },
+        {
+            image: "/images/home/slide-3.png",
+            subtitle: "Innovation at the heart of safety",
+            title: "Norwegian Legacy of Fire Protection Expertise, Trusted Since 1953",
+            link: "/core-strengths",
+        },
+        {
+            image: "/images/home/slide-4.png",
+            subtitle: "Backed By Norwegian Legacy Since 1953",
+            title: "Delivering Reliable Systems For Demanding Industrial Environments",
+            link: "/about",
+        },
+    ];
+
     const fadeUp = {
         hidden: {
             opacity: 0,
@@ -37,110 +71,60 @@ const Home = () => {
 
     return (
         <>
-            <motion.section
-                className="hero-section"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
-            >
+            <section className="hero-section">
 
-                {/* Background layers */}
-                <motion.div
-                    className="hero-bg-left"
-                    initial={{ scale: 1.08 }}
-                    animate={{ scale: 1 }}
-                    transition={{
-                        duration: 6,
-                        ease: "easeOut"
+                <Swiper
+                    modules={[Autoplay, Pagination, EffectFade]}
+                    effect="fade"
+                    loop
+                    speed={1200}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
                     }}
-                />
+                    pagination={{
+                        clickable: true,
+                    }}
+                    className="hero-swiper"
+                >
+                    {heroSlides.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                            <div
+                                className="hero-slide"
+                                style={{
+                                    backgroundImage: `url(${slide.image})`,
+                                }}
+                            >
+                                <div className="hero-overlay" />
 
-                {/* <div className="hero-bg-right" /> */}
+                                <div className="container-main hero-content">
 
-                <div className="hero-overlay" />
+                                    <div className="hero-content-inner">
 
-                {/* Content */}
-                <div className="hero-content container-main flex flex-col justify-center">
+                                        <h1 className="hero-title">
+                                            {slide.title}
+                                        </h1>
 
-                    {/* Heading */}
-                    <motion.div
-                        className="max-w-3xl"
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{
-                            duration: 0.8,
-                            delay: 0.2
-                        }}
-                    >
-                        <h1 className="text-4xl md:text-5xl font-light leading-tight">
-                            <span className="text-white">
-                                Integrated Engineering Solutions
-                            </span>
-                            <br />
-                            <span className="text-white"> for </span>
-                            <span className="text-secondary font-medium">
-                                Precision in Engineering
-                            </span>
-                        </h1>
-                    </motion.div>
+                                        <p className="hero-subtitle">
+                                            {slide.subtitle}
+                                        </p>
 
-                    {/* Stats */}
-                    <motion.div
-                        className="mt-16 grid grid-cols-3 max-w-3xl"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 0.6,
-                            duration: 0.8
-                        }}
-                    >
+                                        <Link
+                                            to={slide.link}
+                                            className="hero-btn"
+                                        >
+                                            Learn More &gt;&gt;
+                                        </Link>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                delay: 0.8,
-                                duration: 0.6
-                            }}
-                        >
-                            <h2 className="text-5xl font-light text-white">+25</h2>
-                            <p className="mt-2 text-sm text-gray-300">
-                                Years of experience
-                            </p>
-                        </motion.div>
+                                    </div>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                delay: 1,
-                                duration: 0.6
-                            }}
-                        >
-                            <h2 className="text-5xl font-light text-white">+350</h2>
-                            <p className="mt-2 text-sm text-gray-300">
-                                Successful projects
-                            </p>
-                        </motion.div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                delay: 1.2,
-                                duration: 0.6
-                            }}
-                        >
-                            <h2 className="text-5xl font-light text-white">+150</h2>
-                            <p className="mt-2 text-sm text-gray-300">
-                                Expert team
-                            </p>
-                        </motion.div>
-
-                    </motion.div>
-
-                </div>
-            </motion.section>
+            </section>
 
             <motion.section
                 className="py-16 bg-white"

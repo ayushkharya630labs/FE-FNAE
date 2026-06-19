@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PageHero from "../../components/PageHero/PageHero";
 
-const BusinessStream = () => {
+const Systems = () => {
   return (
     <>
             {/* ================= HERO ================= */}
             <PageHero
                 breadcrumb="Home"
-                current="Business Stream"
-                title="Business Stream"
-                description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ligula. Sed at nunc a enim efficitur efficitur. Donec in odio ac nisi efficitur commodo."
+                current="Systems"
+                title="Systems"
+                description="Firenor Middle-East specializes in advanced firefighting systems, offering reliable solutions designed to protect industrial facilities and ensure safety in high-risk environments."
                 leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/core-strengths/core-strengths-hero.png"
             />
@@ -255,4 +255,4 @@ const BusinessStream = () => {
   )
 }
 
-export default BusinessStream
+export default Systems

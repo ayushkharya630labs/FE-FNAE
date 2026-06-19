@@ -11,7 +11,7 @@ const CoreStrengths = () => {
                 breadcrumb="Home"
                 current="Core Strengths"
                 title="Core Strengths"
-                description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ligula. Sed at nunc a enim efficitur efficitur. Donec in odio ac nisi efficitur commodo."
+                description="Firenor Middle-East provides engineering, production, installation, and maintenance of advanced firefighting systems, ensuring safety and reliability for global energy, oil, gas, and renewable projects."
                 leftBg="/images/home/hero-right.jpg"
                 rightBg="/images/core-strengths/core-strengths-hero.png"
             />

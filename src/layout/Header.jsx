@@ -51,9 +51,9 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-            {/* Business Stream */}
-            <NavLink to="/business-stream" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Business Stream
+            {/* Systems */}
+            <NavLink to="/systems" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+              Systems
             </NavLink>
             {/* Clients */}
 
