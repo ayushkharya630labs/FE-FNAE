@@ -103,8 +103,8 @@ const Header = () => {
             </NavLink>
           </div>
 
-          <NavLink to="/business-stream" onClick={() => setOpen(false)}>
-            Business Stream
+          <NavLink to="/systems" onClick={() => setOpen(false)}>
+            Systems
           </NavLink>
           <NavLink to="/clients" onClick={() => setOpen(false)}>Clients</NavLink>
           <NavLink to="/core-strengths" onClick={() => setOpen(false)}>Core Strengths</NavLink>
