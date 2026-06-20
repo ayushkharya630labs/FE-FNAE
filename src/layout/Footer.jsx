@@ -23,9 +23,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm leading-relaxed max-w-sm">
-            Firenor delivers trusted fire protection and safety
-            solutions. Committed to quality, compliance, and
-            reliable engineering.
+           Firenor is a Norwegian based company with international presence mitigating risks by delivering high end engineered fire safety systems since 1953. Firenor designs, engineers and supplies fire safety solutions to the international projects in energy, oil & gas and renewable sectors.
           </p>
         </div>
 
@@ -77,20 +75,20 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <UserOutlined className="mt-1" />
             <span>
-              Firenor Middle East LLC - Engineering<br />
-              Al Batha Tower - 2001,<br />
-              283 Corniche St - Sharjah, UAE
+              Firenor International AS<br />
+              Holskogveien 48<br />
+              4624 Kristiansand, Norway
             </span>
           </div>
 
           <div className="flex items-center gap-3">
             <PhoneOutlined />
-            <span>+971 12345678</span>
+            <span>+47 99 09 73 00</span>
           </div>
 
           <div className="flex items-center gap-3">
             <MailOutlined />
-            <span>email@firenor.ae</span>
+            <span>post@firenor.no</span>
           </div>
         </div>
       </div>
