@@ -781,7 +781,7 @@ footer {
 
   /* ---------- HERO ---------- */
   .hero-section {
-    height: auto;
+    height: 300px;
   }
 
   .hero-content {
