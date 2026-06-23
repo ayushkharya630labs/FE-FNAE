@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm leading-relaxed max-w-sm">
-           Firenor is a Norwegian based company with international presence mitigating risks by delivering high end engineered fire safety systems since 1953. Firenor designs, engineers and supplies fire safety solutions to the international projects in energy, oil & gas and renewable sectors.
+            Firenor is a Norwegian based company with international presence mitigating risks by delivering high end engineered fire safety systems since 1953. Firenor designs, engineers and supplies fire safety solutions to the international projects in energy, oil & gas and renewable sectors.
           </p>
         </div>
 
@@ -75,9 +75,10 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <UserOutlined className="mt-1" />
             <span>
-              Firenor International AS<br />
-              Holskogveien 48<br />
-              4624 Kristiansand, Norway
+              {/* FNI Consulting LLC<br /> */}
+              2001 - 283 Corniche St<br />
+              Al Majaz 1 - Al Majaz<br />
+              Sharjah, United Arab Emirates
             </span>
           </div>
 
