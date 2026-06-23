@@ -80,7 +80,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-2.jpg"
                                 alt="Instrumentation"
                                 className="w-full h-48 object-cover"
                             />
@@ -117,7 +117,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-3.png"
                                 alt="Electrical Systems"
                                 className="w-full h-48 object-cover"
                             />
@@ -153,7 +153,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-4.png"
                                 alt="Electrical Systems"
                                 className="w-full h-48 object-cover"
                             />
@@ -189,7 +189,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-5.png"
                                 alt="Electrical Systems"
                                 className="w-full h-48 object-cover"
                             />
@@ -225,7 +225,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-6.png"
                                 alt="Electrical Systems"
                                 className="w-full h-48 object-cover"
                             />
