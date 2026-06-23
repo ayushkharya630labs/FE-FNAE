@@ -8,7 +8,7 @@ import InstrumentationControl from "../pages/services/InstrumentationControl";
 import ElectricalSystems from "../pages/services/ElectricalSystems";
 // Systems
 import Systems from "../pages/systems/Systems";
-import DelugeSystemsMultiZone from "../pages/systems-details/DelugeSystemsMultiZone";
+import SystemDetails from "../pages/systems/SystemDetails";
 // clients
 import Clients from "../pages/clients/Clients";
 // core strengths
@@ -35,7 +35,7 @@ const AppRoutes = () => {
           <Route path="/services/electrical-systems" element={<ElectricalSystems />} />
           {/* systems */}
           <Route path="/systems" element={<Systems />} />
-          <Route path="/systems/deluge-systems-multi-zone" element={<DelugeSystemsMultiZone />} />
+          <Route path="/systems/:slug" element={<SystemDetails />} />
           {/* Clients */}
           <Route path="/clients" element={<Clients />} />
           {/* Core Strengths */}

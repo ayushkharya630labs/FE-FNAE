@@ -34,7 +34,7 @@ const Testing = () => {
                 title="Testing"
                 description="Firenor designs, produces, assembles, tests, installs and performs commissioning on an enormous variety of high quality active firefighting systems for onshore, offshore, and marine industries"
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/project-management-hero.png"
+                rightBg="/images/core-strengths/strengths-4.png"
             />
 
             <section className="py-16 bg-[#f4f4f4]">

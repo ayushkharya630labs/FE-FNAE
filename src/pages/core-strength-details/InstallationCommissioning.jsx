@@ -34,7 +34,7 @@ const InstallationCommissioning = () => {
                 title="Installation & Commissioning"
                 description="Firenor Middle East provides end-to-end Installation and Commissioning services for fire protection, fire detection, electrical, instrumentation, and automation systems."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/installation-commissioning/installation-commissioning-hero.jpg"
+                rightBg="/images/core-strengths/strengths-5.png"
             />
 
             <section className="py-16 bg-[#f4f4f4]">

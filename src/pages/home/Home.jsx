@@ -20,24 +20,77 @@ const Home = () => {
 
     const heroSlides = [
         {
+            type: "home",
+            image: "/images/home/hero.jpg",
+            title: "Integrated Engineering Solutions",
+            highlight: "Precision in Engineering",
+        },
+
+        {
+            type: "default",
             image: "/images/home/slide-1.png",
             subtitle: "For end-to-end solutions",
             title: "Comprehensive Fire Safety Services, From Design to Maintenance",
             link: "/services/fire-protection",
         },
+
         {
+            type: "default",
             image: "/images/home/slide-2.png",
             subtitle: "High-end fire safety solutions",
             title: "Driving Safety Innovation Across Diverse Industries Worldwide",
             link: "/systems",
         },
+
         {
+            type: "default",
             image: "/images/home/slide-3.png",
             subtitle: "Innovation at the heart of safety",
             title: "Norwegian Legacy of Fire Protection Expertise, Trusted Since 1953",
             link: "/core-strengths",
         },
+
         {
+            type: "default",
+            image: "/images/home/slide-4.png",
+            subtitle: "Backed By Norwegian Legacy Since 1953",
+            title: "Delivering Reliable Systems For Demanding Industrial Environments",
+            link: "/about",
+        },
+    ]; const heroSlides = [
+        {
+            type: "home",
+            image: "/images/home/hero-left.jpg",
+            title: "Integrated Engineering Solutions",
+            highlight: "Precision in Engineering",
+        },
+
+        {
+            type: "default",
+            image: "/images/home/slide-1.png",
+            subtitle: "For end-to-end solutions",
+            title: "Comprehensive Fire Safety Services, From Design to Maintenance",
+            link: "/services/fire-protection",
+        },
+
+        {
+            type: "default",
+            image: "/images/home/slide-2.png",
+            subtitle: "High-end fire safety solutions",
+            title: "Driving Safety Innovation Across Diverse Industries Worldwide",
+            link: "/systems",
+        },
+
+        {
+            type: "default",
+            image: "/images/home/slide-3.png",
+            subtitle: "Innovation at the heart of safety",
+            title: "Norwegian Legacy of Fire Protection Expertise, Trusted Since 1953",
+            link: "/core-strengths",
+        },
+
+        {
+            type: "default",
             image: "/images/home/slide-4.png",
             subtitle: "Backed By Norwegian Legacy Since 1953",
             title: "Delivering Reliable Systems For Demanding Industrial Environments",
@@ -99,24 +152,59 @@ const Home = () => {
 
                                 <div className="container-main hero-content">
 
-                                    <div className="hero-content-inner">
+                                    {slide.type === "home" ? (
 
-                                        <h1 className="hero-title">
-                                            {slide.title}
-                                        </h1>
+                                        <div className="hero-home-content">
 
-                                        <p className="hero-subtitle">
-                                            {slide.subtitle}
-                                        </p>
+                                            <h1 className="hero-home-title">
+                                                Integrated Engineering Solutions
+                                                <br />
+                                                for <span>Precision in Engineering</span>
+                                            </h1>
 
-                                        <Link
-                                            to={slide.link}
-                                            className="hero-btn"
-                                        >
-                                            Learn More &gt;&gt;
-                                        </Link>
+                                            <div className="hero-stats">
 
-                                    </div>
+                                                <div>
+                                                    <h2>+25</h2>
+                                                    <p>Years of experience</p>
+                                                </div>
+
+                                                <div>
+                                                    <h2>+350</h2>
+                                                    <p>Successful projects</p>
+                                                </div>
+
+                                                <div>
+                                                    <h2>+150</h2>
+                                                    <p>Expert team</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    ) : (
+
+                                        <div className="hero-content-inner">
+
+                                            <h1 className="hero-title">
+                                                {slide.title}
+                                            </h1>
+
+                                            <p className="hero-subtitle">
+                                                {slide.subtitle}
+                                            </p>
+
+                                            <Link
+                                                to={slide.link}
+                                                className="hero-btn"
+                                            >
+                                                Learn More &gt;&gt;
+                                            </Link>
+
+                                        </div>
+
+                                    )}
 
                                 </div>
                             </div>

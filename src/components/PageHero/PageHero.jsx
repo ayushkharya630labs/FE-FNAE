@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./PageHero.css";
 
 const PageHero = ({
@@ -56,7 +57,23 @@ const PageHero = ({
               delay: 0.2,
             }}
           >
-            {breadcrumb} / <span>{current}</span>
+            {breadcrumb.includes("Systems") ? (
+              <>
+                Home /{" "}
+                <Link
+                  to="/systems"
+                  className="hover:text-white transition-all duration-300"
+                >
+                  Systems
+                </Link>
+                {" / "}
+                <span className="text-[#47A5AE]">{current}</span>
+              </>
+            ) : (
+              <>
+                {breadcrumb} / <span className="text-[#47A5AE]">{current}</span>
+              </>
+            )}
           </motion.p>
 
           {/* Title */}

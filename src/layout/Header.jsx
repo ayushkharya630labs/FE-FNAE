@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { MenuOutlined, CloseOutlined, DownOutlined, SafetyOutlined, ControlOutlined, ThunderboltOutlined } from "@ant-design/icons";
+import {
+  MenuOutlined, CloseOutlined, DownOutlined, SafetyOutlined, ControlOutlined, ThunderboltOutlined, FireOutlined,
+  SafetyCertificateOutlined,
+  CloudOutlined,
+  ExperimentOutlined,
+  DeploymentUnitOutlined,
+  ArrowRightOutlined,
+  ProjectOutlined,
+  SettingOutlined,
+  BuildOutlined,
+  ToolOutlined,
+} from "@ant-design/icons";
 import logo from "../assets/logo.png";
 
 const Header = () => {
@@ -26,9 +37,12 @@ const Header = () => {
             <NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Home
             </NavLink>
+            {/* About */}
             <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               About Us
             </NavLink>
+
+            {/* Services */}
             <div className="nav-dropdown">
               <div
                 className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
@@ -51,18 +65,115 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-            {/* Systems */}
-            <NavLink to="/systems" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Systems
-            </NavLink>
-            {/* Clients */}
 
+            {/* Systems */}
+            <div className="nav-dropdown">
+              <div
+                className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
+                  }`}
+              >
+                Systems <DownOutlined className="dropdown-icon" />
+              </div>
+
+              <div className="dropdown-menu systems-dropdown">
+
+                <NavLink to="/systems/deluge-systems-multi-zone">
+                  <FireOutlined />
+                  <span>Deluge Systems</span>
+                </NavLink>
+
+                <NavLink to="/systems/diff-systems">
+                  <SafetyCertificateOutlined />
+                  <span>DIFF Systems</span>
+                </NavLink>
+
+                <NavLink to="/systems/foam-systems">
+                  <CloudOutlined />
+                  <span>Foam Systems</span>
+                </NavLink>
+
+                <NavLink to="/systems/water-mist-systems">
+                  <ExperimentOutlined />
+                  <span>Water Mist Systems</span>
+                </NavLink>
+
+                <NavLink to="/systems/gaseous-systems">
+                  <DeploymentUnitOutlined />
+                  <span>Gaseous Systems</span>
+                </NavLink>
+
+                <div className="dropdown-divider"></div>
+
+                <NavLink
+                  to="/systems"
+                  className="view-all-systems"
+                >
+                  <span>View All Systems</span>
+                  <ArrowRightOutlined />
+                </NavLink>
+
+              </div>
+            </div>
+
+            {/* Clients */}
             <NavLink to="/clients" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Clients
             </NavLink>
-            <NavLink to="/core-strengths" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Core Strengths
-            </NavLink>
+
+            {/* Core Strengths */}
+            <div className="nav-dropdown">
+              <div
+                className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
+                  }`}
+              >
+                Core Strengths <DownOutlined className="dropdown-icon" />
+              </div>
+
+              <div className="dropdown-menu systems-dropdown">
+
+                <NavLink to="/core-strengths/project-management">
+                  <ProjectOutlined />
+                  <span>Project Management</span>
+                </NavLink>
+
+                <NavLink to="/core-strengths/engineering">
+                  <SettingOutlined />
+                  <span>Engineering</span>
+                </NavLink>
+
+                <NavLink to="/core-strengths/production">
+                  <BuildOutlined />
+                  <span>Production</span>
+                </NavLink>
+
+                <NavLink to="/core-strengths/testing">
+                  <ExperimentOutlined />
+                  <span>Testing</span>
+                </NavLink>
+
+                <NavLink to="/core-strengths/installation-commissioning">
+                  <ToolOutlined />
+                  <span>Installation & Commissioning</span>
+                </NavLink>
+
+                <NavLink to="/core-strengths/maintenance">
+                  <SafetyCertificateOutlined />
+                  <span>Maintenance</span>
+                </NavLink>
+
+                <div className="dropdown-divider"></div>
+
+                <NavLink
+                  to="/core-strengths"
+                  className="view-all-systems"
+                >
+                  <span>View All Core Strengths</span>
+                  <ArrowRightOutlined />
+                </NavLink>
+
+              </div>
+            </div>
+
             {/* <NavLink to="/strengths" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Core Strengths
             </NavLink> */}

@@ -24,6 +24,11 @@ const ProjectManagement = () => {
             image: "/images/core-strengths/strengths-1.jpg",
             link: "/core-strengths/maintenance",
         },
+        {
+            title: "Installation & Commissioning",
+            image: "/images/core-strengths/strengths-1.jpg",
+            link: "/core-strengths/installation-commissioning",
+        }
     ];
 
     return (
@@ -34,7 +39,7 @@ const ProjectManagement = () => {
                 title="Project Management"
                 description="Firenor Middle East delivers projects through a structured Project Management framework aligned with internationally recognized PMO methodologies and governance practices."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/project-management-hero.png"
+                rightBg="/images/core-strengths/strengths-1.jpg"
             />
 
             <section className="py-16 bg-[#f4f4f4]">
@@ -88,9 +93,10 @@ const ProjectManagement = () => {
 
                     </div>
 
+                </div>
                     {/* Core Strengths */}
                     <div className="mt-16">
-                        <h2 className="section-title mb-8">
+                        <h2 className="section-title mb-8 px-24">
                             Core Strengths
                         </h2>
 
@@ -185,7 +191,6 @@ const ProjectManagement = () => {
 
                         </div>
                     </div>
-                </div>
 
 
             </section>
