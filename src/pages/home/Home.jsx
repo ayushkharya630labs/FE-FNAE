@@ -30,7 +30,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-1.png",
             subtitle: "For end-to-end solutions",
-            title: "Comprehensive Fire Safety Services, From Design to Maintenance",
+            title: "Comprehensive Fire Safety Services, From",
+            highlight: " Design to Maintenance",
             link: "/services/fire-protection",
         },
 
@@ -38,7 +39,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-2.png",
             subtitle: "High-end fire safety solutions",
-            title: "Driving Safety Innovation Across Diverse Industries Worldwide",
+            title: "Driving Safety Innovation Across ",
+            highlight: " Diverse Industries Worldwide",
             link: "/systems",
         },
 
@@ -46,7 +48,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-3.png",
             subtitle: "Innovation at the heart of safety",
-            title: "Norwegian Legacy of Fire Protection Expertise, Trusted Since 1953",
+            title: "Norwegian Legacy of Fire Protection Expertise, ",
+            highlight: " Trusted Since 1953",
             link: "/core-strengths",
         },
 
@@ -54,46 +57,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-4.png",
             subtitle: "Backed By Norwegian Legacy Since 1953",
-            title: "Delivering Reliable Systems For Demanding Industrial Environments",
-            link: "/about",
-        },
-    ]; const heroSlides = [
-        {
-            type: "home",
-            image: "/images/home/hero-left.jpg",
-            title: "Integrated Engineering Solutions",
-            highlight: "Precision in Engineering",
-        },
-
-        {
-            type: "default",
-            image: "/images/home/slide-1.png",
-            subtitle: "For end-to-end solutions",
-            title: "Comprehensive Fire Safety Services, From Design to Maintenance",
-            link: "/services/fire-protection",
-        },
-
-        {
-            type: "default",
-            image: "/images/home/slide-2.png",
-            subtitle: "High-end fire safety solutions",
-            title: "Driving Safety Innovation Across Diverse Industries Worldwide",
-            link: "/systems",
-        },
-
-        {
-            type: "default",
-            image: "/images/home/slide-3.png",
-            subtitle: "Innovation at the heart of safety",
-            title: "Norwegian Legacy of Fire Protection Expertise, Trusted Since 1953",
-            link: "/core-strengths",
-        },
-
-        {
-            type: "default",
-            image: "/images/home/slide-4.png",
-            subtitle: "Backed By Norwegian Legacy Since 1953",
-            title: "Delivering Reliable Systems For Demanding Industrial Environments",
+            title: "Delivering Reliable Systems For ",
+            highlight: " Demanding Industrial Environments",
             link: "/about",
         },
     ];
@@ -156,30 +121,71 @@ const Home = () => {
 
                                         <div className="hero-home-content">
 
-                                            <h1 className="hero-home-title">
-                                                Integrated Engineering Solutions
+                                            <h1 className="text-4xl md:text-5xl font-light leading-tight">
+                                                <span className="text-white">
+                                                    Integrated Engineering Solutions
+                                                </span>
                                                 <br />
-                                                for <span>Precision in Engineering</span>
+                                                <span className="text-white"> for </span>
+                                                <span className="text-secondary font-medium">
+                                                    Precision in Engineering
+                                                </span>
                                             </h1>
 
-                                            <div className="hero-stats">
+                                            {/* Stats */}
+                                            <motion.div
+                                                className="mt-16 grid grid-cols-3 max-w-3xl"
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                transition={{
+                                                    delay: 0.6,
+                                                    duration: 0.8
+                                                }}
+                                            >
 
-                                                <div>
-                                                    <h2>+25</h2>
-                                                    <p>Years of experience</p>
-                                                </div>
+                                                <motion.div
+                                                    initial={{ opacity: 0, y: 30 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    transition={{
+                                                        delay: 0.8,
+                                                        duration: 0.6
+                                                    }}
+                                                >
+                                                    <h2 className="text-5xl font-light text-white">+25</h2>
+                                                    <p className="mt-2 text-sm text-gray-300">
+                                                        Years of experience
+                                                    </p>
+                                                </motion.div>
 
-                                                <div>
-                                                    <h2>+350</h2>
-                                                    <p>Successful projects</p>
-                                                </div>
+                                                <motion.div
+                                                    initial={{ opacity: 0, y: 30 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    transition={{
+                                                        delay: 1,
+                                                        duration: 0.6
+                                                    }}
+                                                >
+                                                    <h2 className="text-5xl font-light text-white">+350</h2>
+                                                    <p className="mt-2 text-sm text-gray-300">
+                                                        Successful projects
+                                                    </p>
+                                                </motion.div>
 
-                                                <div>
-                                                    <h2>+150</h2>
-                                                    <p>Expert team</p>
-                                                </div>
+                                                <motion.div
+                                                    initial={{ opacity: 0, y: 30 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    transition={{
+                                                        delay: 1.2,
+                                                        duration: 0.6
+                                                    }}
+                                                >
+                                                    <h2 className="text-5xl font-light text-white">+150</h2>
+                                                    <p className="mt-2 text-sm text-gray-300">
+                                                        Expert team
+                                                    </p>
+                                                </motion.div>
 
-                                            </div>
+                                            </motion.div>
 
                                         </div>
 
@@ -187,19 +193,27 @@ const Home = () => {
 
                                         <div className="hero-content-inner">
 
+                                            <span className="hero-badge">
+                                                {slide.subtitle}
+                                            </span>
+
                                             <h1 className="hero-title">
                                                 {slide.title}
-                                            </h1>
 
-                                            <p className="hero-subtitle">
-                                                {slide.subtitle}
-                                            </p>
+                                                {slide.highlight && (
+                                                    <>
+                                                        <span className="hero-title-highlight">
+                                                            {slide.highlight}
+                                                        </span>
+                                                    </>
+                                                )}
+                                            </h1>
 
                                             <Link
                                                 to={slide.link}
                                                 className="hero-btn"
                                             >
-                                                Learn More &gt;&gt;
+                                                Learn More
                                             </Link>
 
                                         </div>
