@@ -1,31 +1,8 @@
-import { Link } from "react-router-dom";
+import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
-import { ArrowRightOutlined } from "@ant-design/icons";
 
 const Testing = () => {
-    const strengths = [
-        {
-            title: "Production",
-            image: "/images/core-strengths/strengths-1.jpg",
-            link: "/core-strengths/production",
-        },
-        {
-            title: "Testing",
-            image: "/images/core-strengths/strengths-1.jpg",
-            link: "/core-strengths/testing",
-        },
-        {
-            title: "Installation & Commissioning",
-            image: "/images/core-strengths/strengths-1.jpg",
-            link: "/core-strengths/installation-commissioning",
-        },
-        {
-            title: "Maintenance",
-            image: "/images/core-strengths/strengths-1.jpg",
-            link: "/core-strengths/maintenance",
-        },
-    ];
-
+ 
     return (
         <>
             <PageHero
@@ -84,114 +61,19 @@ const Testing = () => {
                             </ul>
                         </div>
 
-                        <div>
-                            <img
-                                src="/images/core-strengths/project-management/service-img.jpg"
+                        <div style={{ height: "60vh" }}>
+                            <img style={{ height: "100%"}}
+                                src="/images/core-strengths/testing/img-1.png"
                                 alt="Project Management"
                                 className="w-full object-cover"
                             />
                         </div>
 
                     </div>
+                </div>
 
                     {/* Core Strengths */}
-                    <div className="mt-16">
-                        <h2 className="section-title mb-8">
-                            Core Strengths
-                        </h2>
-
-                        <div className="flex gap-5 overflow-x-auto pb-4">
-
-                            {strengths.map((item, index) => (
-                                <Link
-                                    key={index}
-                                    to={item.link}
-                                    className="
-                                    min-w-[235px]
-                                    max-w-[235px]
-                                    bg-white
-                                    border
-                                    border-[#dddddd]
-                                    flex
-                                    flex-col
-                                    relative
-                                    transition-all
-                                    duration-300
-                                    hover:border-[#c4122f]
-                                    "
-                                >
-
-                                    {/* Image */}
-                                    <div className="h-[120px] overflow-hidden">
-                                        <img
-                                            src={item.image}
-                                            alt={item.title}
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-
-                                    {/* Content */}
-                                    <div className="relative h-[78px] px-4 flex items-center">
-
-                                        {/* Red Corner Mark */}
-                                        <span
-                                            className="
-                            absolute
-                            top-0
-                            left-0
-                            w-[10px]
-                            h-[10px]
-                            border-l-[3px]
-                            border-t-[3px]
-                            border-[#C4122F]
-                            "
-                                        />
-
-                                        {/* Title */}
-                                        <h3
-                                            className="
-                                            text-[15px]
-                                            text-[#404040]
-                                            font-normal
-                                            leading-[1.15]
-                                            max-w-[135px]
-                                        "
-                                        >
-                                            {item.title}
-                                        </h3>
-
-                                        <div
-                                            className="
-    absolute
-    right-4
-    top-1/2
-    -translate-y-1/2
-    w-[32px]
-    h-[32px]
-    rounded-full
-    bg-[#C4122F]
-    flex
-    items-center
-    justify-center
-  "
-                                        >
-                                            <ArrowRightOutlined
-                                                style={{
-                                                    color: "#fff",
-                                                    fontSize: "13px",
-                                                    fontWeight: 400,
-                                                }}
-                                            />
-                                        </div>
-
-                                    </div>
-
-                                </Link>
-                            ))}
-
-                        </div>
-                    </div>
-                </div>
+                    <CoreStrengthCards currentPath="/core-strengths/testing" />
 
 
             </section>

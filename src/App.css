@@ -5,9 +5,11 @@
   font-style: normal;
   font-display: swap;
 }
+
 body {
   font-family: "Square721", sans-serif;
 }
+
 .m-0 {
   margin: 0 !important;
 }
@@ -24,9 +26,11 @@ body {
   --primary-blue: #47A5AE;
   --brand-dark: #2e2e2e;
 }
+
 .text-secondary {
   color: var(--primary-blue);
 }
+
 .text-white {
   color: #fff !important;
 }
@@ -36,12 +40,15 @@ body {
   background: #fff;
   border-bottom: 1px solid #e5e7eb;
 }
+
 .mobile-sidebar {
   display: none;
 }
+
 .mobile-menu-btn {
   display: none;
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -81,6 +88,7 @@ body {
 .nav-link.active {
   color: var(--primary-red);
 }
+
 /* ================= SERVICES DROPDOWN ================= */
 .nav-dropdown {
   position: relative;
@@ -183,6 +191,7 @@ body {
   height: 2px;
   background: var(--primary-blue);
 }
+
 /* ================= HERO ================= */
 .hero-section {
   position: relative;
@@ -198,17 +207,16 @@ body {
   position: absolute;
   inset: 0;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
 
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.35) 50%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.35) 50%,
+      rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-bg-left {
@@ -235,7 +243,7 @@ body {
   padding: 6px 14px;
   margin-bottom: 24px;
 
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 
   border-radius: 30px;
@@ -266,11 +274,12 @@ body {
 
   height: 38px;
   min-width: 120px;
-font-weight: 600;
+  font-weight: 600;
   font-size: 15px;
 
   transition: .3s;
 }
+
 .hero-title-highlight {
   color: #50DEEC;
   font-weight: 500;
@@ -279,6 +288,7 @@ font-weight: 600;
 .hero-btn:hover {
   background: #3d949c;
 }
+
 .hero-swiper .swiper-pagination {
   bottom: 50px !important;
   text-align: left;
@@ -302,6 +312,7 @@ font-weight: 600;
   z-index: 10;
   height: 100%;
 }
+
 .hero-swiper,
 .hero-slide {
   width: 100%;
@@ -337,7 +348,7 @@ font-weight: 600;
 .expertise-card {
   background: #fff;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
   position: relative;
 }
 
@@ -376,14 +387,14 @@ font-weight: 600;
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.4));
+  background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .4));
 }
 
 .about-content {
   position: relative;
   padding: 64px;
   max-width: 760px;
-      padding-left: 100px;
+  padding-left: 100px;
 }
 
 .about-text {
@@ -457,10 +468,12 @@ font-weight: 600;
   overflow: hidden;
   border: 1px solid white;
 }
+
 .core-card img {
   height: 100%;
   object-fit: cover;
 }
+
 /* ================= CORE INFO CARD ================= */
 
 .core-info {
@@ -469,12 +482,10 @@ font-weight: 600;
 
   min-height: 270px;
 
-  background: linear-gradient(
-    90deg,
-    #3faab8 0%,
-    #1698aa 55%,
-    #0f8d9f 100%
-  );
+  background: linear-gradient(90deg,
+      #3faab8 0%,
+      #1698aa 55%,
+      #0f8d9f 100%);
 
   padding: 70px 95px;
 
@@ -511,7 +522,7 @@ font-weight: 600;
 
 .core-shape {
   position: absolute;
-  background: rgba(255,255,255,.12);
+  background: rgba(255, 255, 255, .12);
 }
 
 /* top left */
@@ -600,12 +611,11 @@ font-weight: 600;
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.55)
-  );
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.55));
 }
+
 .stats-section {
   background: url("/images/home/pattern-bg.jpg") repeat;
 }
@@ -640,11 +650,9 @@ font-weight: 600;
 .contact-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.55)
-  );
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.55));
   z-index: 3;
 }
 
@@ -685,26 +693,28 @@ footer {
 
 /* ================= MOBILE HEADER ================= */
 @media (max-width: 786px) {
-.py-sm-10 {
-  padding: 10px 0;
-}
+  .py-sm-10 {
+    padding: 10px 0;
+  }
+
   .mobile-menu-btn {
     display: block;
   }
+
   .nav {
     display: none;
   }
 
   .mobile-services {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.mobile-services-title {
-  font-weight: 600;
-  color: var(--brand-dark);
-}
+  .mobile-services-title {
+    font-weight: 600;
+    color: var(--brand-dark);
+  }
 
   .mobile-menu-btn {
     font-size: 22px;
@@ -798,7 +808,7 @@ footer {
 
   /* ---------- HERO ---------- */
   .hero-section {
-    height: 330px;
+    height: 350px;
   }
 
   .hero-content {
@@ -819,9 +829,9 @@ footer {
   }
 
   .hero-content .grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
 
   .hero-content h2 {
     font-size: 32px;
@@ -869,6 +879,7 @@ footer {
   .core-bottom {
     flex-direction: column;
   }
+
   .contact-hero {
     height: 100%;
   }
@@ -882,7 +893,8 @@ footer {
   .cert-list {
     font-size: 13px;
   }
-    footer {
+
+  footer {
     padding: 40px 0;
   }
 
@@ -954,6 +966,7 @@ footer {
     flex: 1 1 100%;
   }
 }
+
 @media (max-width: 767px) {
 
   .hero-content {
@@ -965,29 +978,36 @@ footer {
     font-size: 17px;
     line-height: 1.4;
   }
+
   .hero-subtitle {
     font-size: 14px;
   }
-.hero-btn {
+
+  .hero-btn {
     height: 35px;
     min-width: 140px;
     font-size: 14px;
-}
+  }
+
   /* Stats */
   .hero-content .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 18px;
   }
-  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+
     bottom: 6% !important;
     left: -63px !important;
-}
+  }
 
   .hero-content h2 {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   /* Core Section */
