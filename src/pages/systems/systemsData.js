@@ -467,46 +467,33 @@ export const systemsData = [
     },
     // 
     {
-        slug: "standalone-diff",
+        slug: "sprinkler-systems",
 
         hero: {
-            title: "Standalone DIFF Systems",
+            title: "Sprinkler Systems",
             description:
-                "A Deck Integrated Fire Fighting (DIFF) system is an effective fire suppression system that is normally the primary firefighting system on a helideck. The compact design of the system also allows it to be easily installed in storage areas and hangars used for aircrafts and helicopters. This versatile system can also extinguish a pool fire by mixing foam in the water at a specified flow, should the need arise.",
+                "A sprinkler system offers optimal fire protection in areas where there is little to no risk of rapid fire spread. Because the nozzles of a sprinkler system automatically open if the temperature increases beyond a designated threshold, sprinkler systems provide a quick response during any fire emergency. Sprinkler systems typically provide optimal coverage and protection in areas where personnel are usually present, like commercial buildings, offices, living quarters, workshops, and similar areas.",
             image: "/images/core-strengths/maintenance/maintenance-hero.jpg",
         },
 
         systemDesign:
-            "The Firenor standard design of the DIFF system was developed based on decades of firefighting industry experience. The system connects the water supply to a series of open pop up nozzles through a network of dry pipework. A traditional on-off valve normally prevents the water from flowing through the pipes when the system is not in use, though Firenor can install a pressure regulating deluge valve if the water supply requires one. Instrumentation and valves on the Firenor DIFF system are designed to allow for hassle-free operation, maintenance, and testing. The Firenor DIFF system can all be custom built to meet specific project requirements. Custom built systems will always be compliant with any required safety integrity level and full flow pre-tested before delivery. ",
+            "A sprinkler system connects closed nozzles to water supply through a network of pressurized pipework. In the standard Firenor design, a closed on-off valve controls the water supply, though a pressure regulating sprinkler valve is available when necessary. The system is fully equipped with all necessary valves and instrumentation for easy operation, maintenance, and testing. The release mechanism is automatically controlled via a pressure decrease in the pipe system whenever a sprinkler nozzle has been activated. A Firenor sprinkler system can be customized to meet any project requirements. For example, the sprinkler system can be adapted to cold locations where pipefreezing is a concern by filling the pipe network with air instead of water and by storing the system in an insulated cabinet instead of an open frame. All customized sprinkler systems are built precisely to customer requirements and full flow pre-tested to ensure quality before delivery.",
 
         verification: {
             title: "Verification",
-            image: "/images/systems/system-4.jpg",
-            description: "Every system can be customized, upon request, for compliance with applicable rules, regulations and project specific requirements. Full documentation for any tailor-made products are available and include all necessary certifications, third party verifications such as DNV/GL, BV, ABS, etc., and full scale test reports, if required.",
-        },
-
-        foamSupply: {
-            title: "Foam Supply",
-            description:
-                "The foam supply for this system can be provided by a separate tank outside or inside the skid, or from a central foam system, depending on the exact project specifications. The foam can be mixed with a variety of solutions listed below:",
-            items: [
-                "Turbine foam proportioner",
-                "Balanced pressure foam proportioner",
-                "Foam inductor",
-                "Constant flow orifice",
-            ],
+            image: "/images/systems/system-7.jpg",
+            description: "Every system can be customized, upon request, for compliance with applicable rules, regulations and project specific requirements as well as standard such as CE, FM, UL, ASME, DIN, DNV, BV, NMD, IMO, NFPA, Norsok. Full documentation for any tailor-made products are available and include all necessary certifications, third party verifications such as DNV/GL, BV, ABS, etc., and full scale test reports, if required.",
         },
 
         nozzles:
-            "Both the recessed mounted nozzles and ring main nozzles that are flushed with the deck (when not in use) offer effective fire protection that does not interfere with everyday work activities. These nozzles are available in several sizes and materials. The nozzle is designed to allow easy maintenance from the top and has a special feature for pressure testing of the pipe system after installation.",
+            "Firenor can deliver variety of sprinkler nozzles with different flow and release temperatures for use with the sprinkler skid. A sprinkler nozzle uses a simple and well known activation method. A glass bulb is sealing the nozzle. The glass bulb is filled with alcohol and a small air bubble. When the temperature reaches a certain designated point, the expanding air bubble causes the bulb to burst. Water released from the nozzle strikes the deflector and creates a spray in the designated area. In addition to providing sprinkler nozzles, Firenor offers its years of industry experience to properly place the nozzles and perform all hydraulic calculations, for maximum efficiency of fire protection.",
 
         features: [
-            "Compatible with different regulation such as IALA, ICAO, CAP437, NORMAM-27 and Norsok.",
-            "Regulating or non-regulating deluge valve",
+            "Outlets from 2-12 inches",
+            "Regulating or non-regulating deluge Valve",
             "Flexible design",
             "Compatible with various hazardous area classifications and regulations (ATEX, UL, CSA etc.)",
-            "Compatible with IEC 61508 for Safety Integrity Level 2 or 3",
-            "Full-scale test",
+            "Full-scale tests up to 35 000 LPM",
             "Working environment friendly design",
         ],
 
@@ -544,164 +531,4 @@ export const systemsData = [
             ],
         },
     },
-    // 
-    {
-        slug: "standalone-diff",
-
-        hero: {
-            title: "Standalone DIFF Systems",
-            description:
-                "A Deck Integrated Fire Fighting (DIFF) system is an effective fire suppression system that is normally the primary firefighting system on a helideck. The compact design of the system also allows it to be easily installed in storage areas and hangars used for aircrafts and helicopters. This versatile system can also extinguish a pool fire by mixing foam in the water at a specified flow, should the need arise.",
-            image: "/images/core-strengths/maintenance/maintenance-hero.jpg",
-        },
-
-        systemDesign:
-            "The Firenor standard design of the DIFF system was developed based on decades of firefighting industry experience. The system connects the water supply to a series of open pop up nozzles through a network of dry pipework. A traditional on-off valve normally prevents the water from flowing through the pipes when the system is not in use, though Firenor can install a pressure regulating deluge valve if the water supply requires one. Instrumentation and valves on the Firenor DIFF system are designed to allow for hassle-free operation, maintenance, and testing. The Firenor DIFF system can all be custom built to meet specific project requirements. Custom built systems will always be compliant with any required safety integrity level and full flow pre-tested before delivery. ",
-
-        verification: {
-            title: "Verification",
-            image: "/images/systems/system-4.jpg",
-            description: "Every system can be customized, upon request, for compliance with applicable rules, regulations and project specific requirements. Full documentation for any tailor-made products are available and include all necessary certifications, third party verifications such as DNV/GL, BV, ABS, etc., and full scale test reports, if required.",
-        },
-
-        foamSupply: {
-            title: "Foam Supply",
-            description:
-                "The foam supply for this system can be provided by a separate tank outside or inside the skid, or from a central foam system, depending on the exact project specifications. The foam can be mixed with a variety of solutions listed below:",
-            items: [
-                "Turbine foam proportioner",
-                "Balanced pressure foam proportioner",
-                "Foam inductor",
-                "Constant flow orifice",
-            ],
-        },
-
-        nozzles:
-            "Both the recessed mounted nozzles and ring main nozzles that are flushed with the deck (when not in use) offer effective fire protection that does not interfere with everyday work activities. These nozzles are available in several sizes and materials. The nozzle is designed to allow easy maintenance from the top and has a special feature for pressure testing of the pipe system after installation.",
-
-        features: [
-            "Compatible with different regulation such as IALA, ICAO, CAP437, NORMAM-27 and Norsok.",
-            "Regulating or non-regulating deluge valve",
-            "Flexible design",
-            "Compatible with various hazardous area classifications and regulations (ATEX, UL, CSA etc.)",
-            "Compatible with IEC 61508 for Safety Integrity Level 2 or 3",
-            "Full-scale test",
-            "Working environment friendly design",
-        ],
-
-        materials: {
-            title: "Material",
-            description: "Every Firenor system is available in the following materials:",
-            items: [
-                "Galvanized carbon steel",
-                "Copper nickel",
-                "Super duplex",
-                "Titanium",
-                "Duplex",
-                "SS316",
-                "6Mo",
-                "GRE",
-            ],
-        },
-
-        documentation: {
-            title: "Documentation",
-            description:
-                "The engineering department produces documentation relevant to all phases of the project. Documentation normally includes the following:",
-            items: [
-                "Quality plan",
-                "ITP",
-                "Drawings",
-                "Data sheets",
-                "Indexes",
-                "Procedures",
-                "Calculations",
-                "Certificates",
-                "Reports",
-                "User manual",
-                "MRB",
-            ],
-        },
-    },
-    // 
-    {
-        slug: "standalone-diff",
-
-        hero: {
-            title: "Standalone DIFF Systems",
-            description:
-                "A Deck Integrated Fire Fighting (DIFF) system is an effective fire suppression system that is normally the primary firefighting system on a helideck. The compact design of the system also allows it to be easily installed in storage areas and hangars used for aircrafts and helicopters. This versatile system can also extinguish a pool fire by mixing foam in the water at a specified flow, should the need arise.",
-            image: "/images/core-strengths/maintenance/maintenance-hero.jpg",
-        },
-
-        systemDesign:
-            "The Firenor standard design of the DIFF system was developed based on decades of firefighting industry experience. The system connects the water supply to a series of open pop up nozzles through a network of dry pipework. A traditional on-off valve normally prevents the water from flowing through the pipes when the system is not in use, though Firenor can install a pressure regulating deluge valve if the water supply requires one. Instrumentation and valves on the Firenor DIFF system are designed to allow for hassle-free operation, maintenance, and testing. The Firenor DIFF system can all be custom built to meet specific project requirements. Custom built systems will always be compliant with any required safety integrity level and full flow pre-tested before delivery. ",
-
-        verification: {
-            title: "Verification",
-            image: "/images/systems/system-4.jpg",
-            description: "Every system can be customized, upon request, for compliance with applicable rules, regulations and project specific requirements. Full documentation for any tailor-made products are available and include all necessary certifications, third party verifications such as DNV/GL, BV, ABS, etc., and full scale test reports, if required.",
-        },
-
-        foamSupply: {
-            title: "Foam Supply",
-            description:
-                "The foam supply for this system can be provided by a separate tank outside or inside the skid, or from a central foam system, depending on the exact project specifications. The foam can be mixed with a variety of solutions listed below:",
-            items: [
-                "Turbine foam proportioner",
-                "Balanced pressure foam proportioner",
-                "Foam inductor",
-                "Constant flow orifice",
-            ],
-        },
-
-        nozzles:
-            "Both the recessed mounted nozzles and ring main nozzles that are flushed with the deck (when not in use) offer effective fire protection that does not interfere with everyday work activities. These nozzles are available in several sizes and materials. The nozzle is designed to allow easy maintenance from the top and has a special feature for pressure testing of the pipe system after installation.",
-
-        features: [
-            "Compatible with different regulation such as IALA, ICAO, CAP437, NORMAM-27 and Norsok.",
-            "Regulating or non-regulating deluge valve",
-            "Flexible design",
-            "Compatible with various hazardous area classifications and regulations (ATEX, UL, CSA etc.)",
-            "Compatible with IEC 61508 for Safety Integrity Level 2 or 3",
-            "Full-scale test",
-            "Working environment friendly design",
-        ],
-
-        materials: {
-            title: "Material",
-            description: "Every Firenor system is available in the following materials:",
-            items: [
-                "Galvanized carbon steel",
-                "Copper nickel",
-                "Super duplex",
-                "Titanium",
-                "Duplex",
-                "SS316",
-                "6Mo",
-                "GRE",
-            ],
-        },
-
-        documentation: {
-            title: "Documentation",
-            description:
-                "The engineering department produces documentation relevant to all phases of the project. Documentation normally includes the following:",
-            items: [
-                "Quality plan",
-                "ITP",
-                "Drawings",
-                "Data sheets",
-                "Indexes",
-                "Procedures",
-                "Calculations",
-                "Certificates",
-                "Reports",
-                "User manual",
-                "MRB",
-            ],
-        },
-    },
-    // 
-
 ];

@@ -668,15 +668,16 @@ const Home = () => {
                                 whileHover={{ y: -6 }}
                             >
                                 <motion.img
-                                    src="/images/home/core-1.jpg"
+                                    src="/images/core-strengths/strengths-5.png"
                                     alt=""
                                     whileHover={{ scale: 1.04 }}
                                     transition={{ duration: 0.5 }}
                                 />
 
-                                <div className="core-arrow">
+                                <Link to="/core-strengths/installation-commissioning" className="core-arrow">
                                     <ArrowRightOutlined />
-                                </div>
+                                </Link>
+                                <h5>Installation & Commissioning</h5>
                             </motion.div>
                         </div>
 
@@ -695,15 +696,16 @@ const Home = () => {
                                 whileHover={{ y: -6 }}
                             >
                                 <motion.img
-                                    src="/images/home/core-2.jpg"
+                                    src="/images/core-strengths/strengths-1.jpg"
                                     alt=""
                                     whileHover={{ scale: 1.04 }}
                                     transition={{ duration: 0.5 }}
                                 />
 
-                                <div className="core-arrow">
+                                <Link to="/core-strengths/project-management" className="core-arrow">
                                     <ArrowRightOutlined />
-                                </div>
+                                </Link>
+                                <h5>Project Management</h5>
                             </motion.div>
 
                             <motion.div
@@ -718,15 +720,16 @@ const Home = () => {
                                 whileHover={{ y: -6 }}
                             >
                                 <motion.img
-                                    src="/images/home/core-3.jpg"
+                                    src="/images/core-strengths/strengths-3.png"
                                     alt=""
                                     whileHover={{ scale: 1.04 }}
                                     transition={{ duration: 0.5 }}
                                 />
 
-                                <div className="core-arrow">
+                                 <Link to="/core-strengths/production" className="core-arrow">
                                     <ArrowRightOutlined />
-                                </div>
+                                </Link>
+                                <h5>Production</h5>
                             </motion.div>
 
                             <motion.div
@@ -741,15 +744,16 @@ const Home = () => {
                                 whileHover={{ y: -6 }}
                             >
                                 <motion.img
-                                    src="/images/home/core-4.jpg"
+                                    src="/images/core-strengths/strengths-6.png"
                                     alt=""
                                     whileHover={{ scale: 1.04 }}
                                     transition={{ duration: 0.5 }}
                                 />
 
-                                <div className="core-arrow">
+                                <Link to="/core-strengths/maintenance" className="core-arrow">
                                     <ArrowRightOutlined />
-                                </div>
+                                </Link>
+                                <h5>Maintance</h5>
                             </motion.div>
 
                         </div>

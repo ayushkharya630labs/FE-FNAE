@@ -16,13 +16,13 @@ const SystemDetails = () => {
     return (
         <>
             <PageHero
-    breadcrumb="Home / Systems"
-    current={system.hero.title}
-    title={system.hero.title}
-    description={system.hero.description}
-    leftBg="/images/home/hero-right.jpg"
-    rightBg={system.hero.image}
-/>
+                breadcrumb="Home / Systems"
+                current={system.hero.title}
+                title={system.hero.title}
+                description={system.hero.description}
+                leftBg="/images/home/hero-right.jpg"
+                rightBg={system.hero.image}
+            />
 
             <section className="py-16 bg-[#f4f4f4]">
                 <div className="container-main">
@@ -62,6 +62,7 @@ const SystemDetails = () => {
                     </div>
 
                     {/* Foam Supply */}
+                    {system.foamSupply &&
                     <div className="mb-16">
                         <h2 className="section-title mb-3">
                             {system.foamSupply.title}
@@ -77,6 +78,7 @@ const SystemDetails = () => {
                             ))}
                         </ul>
                     </div>
+                    }
 
                     {/* Nozzles */}
                     {system.nozzles && (
@@ -201,8 +203,8 @@ const SystemDetails = () => {
                                 {/* Image */}
                                 <div className="h-[120px] overflow-hidden">
                                     <img
-                                        src={item.cardImage}
-                                        alt={item.title}
+                                        src={item.verification?.image}
+                                        alt={item.hero?.title}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -234,7 +236,7 @@ const SystemDetails = () => {
                                             max-w-[135px]
                                         "
                                     >
-                                        {item.title}
+                                        {item.hero?.title}
                                     </h3>
 
                                     <div
