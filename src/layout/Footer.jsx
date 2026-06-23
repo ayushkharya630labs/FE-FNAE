@@ -83,12 +83,12 @@ const Footer = () => {
 
           <div className="flex items-center gap-3">
             <PhoneOutlined />
-            <span>+47 99 09 73 00</span>
+            <span>+971 6 546 1829</span>
           </div>
 
           <div className="flex items-center gap-3">
             <MailOutlined />
-            <span>post@firenor.no</span>
+            <span>Info@firenor.ae</span>
           </div>
         </div>
       </div>

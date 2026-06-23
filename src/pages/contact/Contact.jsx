@@ -58,12 +58,12 @@ const Contact = () => {
                 >
                   <div className="flex items-center gap-2">
                     <PhoneOutlined />
-                    <span>+971 12345678</span>
+                    <span>+971 6 546 1829</span>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <MailOutlined />
-                    <span>email@firenor.ae</span>
+                    <span>Info@firenor.ae</span>
                   </div>
                 </motion.div>
               </motion.div>
