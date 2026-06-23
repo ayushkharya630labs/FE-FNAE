@@ -726,7 +726,7 @@ const Home = () => {
                                     transition={{ duration: 0.5 }}
                                 />
 
-                                 <Link to="/core-strengths/production" className="core-arrow">
+                                <Link to="/core-strengths/production" className="core-arrow">
                                     <ArrowRightOutlined />
                                 </Link>
                                 <h5>Production</h5>
@@ -782,22 +782,25 @@ const Home = () => {
                             NEBOSH, BS 6387, IEC 60331, EN 50200, CE, FM, UL, DNV, BV, IMO, NFPA
                         </p>
 
-                        <motion.button
-                            className="cert-btn mt-5"
-                            whileHover={{
-                                y: -2,
-                                scale: 1.02
-                            }}
-                            whileTap={{
-                                scale: 0.98
-                            }}
-                        >
-                            Contact us
-                        </motion.button>
+                        <Link to="/contact">
+
+                            <motion.button
+                                className="cert-btn mt-5"
+                                whileHover={{
+                                    y: -2,
+                                    scale: 1.02
+                                }}
+                                whileTap={{
+                                    scale: 0.98
+                                }}
+                            >
+                                Contact us
+                            </motion.button>
+                        </Link>
                     </motion.div>
 
                 </div>
-            </motion.section>
+            </motion.section >
 
         </>
 

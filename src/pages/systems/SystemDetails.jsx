@@ -37,7 +37,7 @@ const SystemDetails = () => {
                     </div>
 
 
-                    <div className="flex mb-20 items-stretch">
+                    <div className="flex flex-col lg:flex-row mb-20 items-stretch">
 
                         {/* Left */}
                         <div className="basis-1/2 p-8 bg-[#47A5AE] flex flex-col justify-center">
@@ -175,7 +175,7 @@ const SystemDetails = () => {
                 </div>
                 {/* Other Business Streams */}
                 <div className="mt-16">
-                    <h2 className="section-title mb-8 px-24">
+                    <h2 className="section-title mb-8 md:px-24 px-10">
                         The Other Business Streams
                     </h2>
 

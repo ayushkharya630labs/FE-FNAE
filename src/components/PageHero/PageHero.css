@@ -73,7 +73,9 @@
 
 @media (max-width: 768px) {
   .page-hero {
-    height: 400px;
+    min-height: 400px;
+    height: auto;
+    padding-top: 20px;
   }
 
   .page-hero-bg-right,
