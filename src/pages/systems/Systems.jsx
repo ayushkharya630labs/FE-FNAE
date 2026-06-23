@@ -142,10 +142,6 @@ const Systems = () => {
             {/* ================= SCOPE OF WORK ================= */}
             <motion.section
                 className="py-16 bg-white"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, amount: 0.15 }}
-                transition={{ duration: 0.8 }}
             >
                 <div className="container-main">
 
