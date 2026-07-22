@@ -255,7 +255,7 @@ const OurPartner = () => {
                                         {partner.title}
                                     </h3>
 
-                                    <p className="text-[14px] text-gray-500">
+                                    <p className="text-[14px] text-gray-500 whitespace-pre-line">
                                         {partner.description}
                                     </p>
                                 </div>
