@@ -67,7 +67,7 @@ const Header = () => {
             </div>
 
             {/* Systems */}
-            <div className="nav-dropdown">
+            {/* <div className="nav-dropdown">
               <div
                 className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
                   }`}
@@ -113,12 +113,7 @@ const Header = () => {
                 </NavLink>
 
               </div>
-            </div>
-
-            {/* Clients */}
-            <NavLink to="/clients" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Clients
-            </NavLink>
+            </div> */}
 
             {/* Core Strengths */}
             <div className="nav-dropdown">
@@ -173,10 +168,16 @@ const Header = () => {
 
               </div>
             </div>
+            
+            {/* Clients */}
+            <NavLink to="/clients" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+              Clients
+            </NavLink>
 
-            {/* <NavLink to="/strengths" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-              Core Strengths
-            </NavLink> */}
+
+            <NavLink to="/our-partner" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+              Our Partner
+            </NavLink>
             <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Contact Us
             </NavLink>
@@ -214,11 +215,12 @@ const Header = () => {
             </NavLink>
           </div>
 
-          <NavLink to="/systems" onClick={() => setOpen(false)}>
+          {/* <NavLink to="/systems" onClick={() => setOpen(false)}>
             Systems
-          </NavLink>
-          <NavLink to="/clients" onClick={() => setOpen(false)}>Clients</NavLink>
+          </NavLink> */}
           <NavLink to="/core-strengths" onClick={() => setOpen(false)}>Core Strengths</NavLink>
+          <NavLink to="/clients" onClick={() => setOpen(false)}>Clients</NavLink>
+          <NavLink to="/our-partner" onClick={() => setOpen(false)}>Our Partner</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact Us</NavLink>
         </nav>
       </div>

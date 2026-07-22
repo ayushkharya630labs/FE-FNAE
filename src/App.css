@@ -74,7 +74,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav-link {

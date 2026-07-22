@@ -13,6 +13,7 @@ import SystemDetails from "../pages/systems/SystemDetails";
 import Clients from "../pages/clients/Clients";
 // core strengths
 import CoreStrengths from "../pages/core-strengths/CoreStrengths";
+import OurPartner from "../pages/our-partner/OurPartner";
 import ProjectManagement from "../pages/core-strength-details/ProjectManagement";
 import Engineering from "../pages/core-strength-details/Engineering";
 import Production from "../pages/core-strength-details/Production";
@@ -40,6 +41,7 @@ const AppRoutes = () => {
           <Route path="/clients" element={<Clients />} />
           {/* Core Strengths */}
           <Route path="/core-strengths" element={<CoreStrengths />} />
+          <Route path="/our-partner" element={<OurPartner />} />
           <Route
             path="/core-strengths/project-management"
             element={<ProjectManagement />}
