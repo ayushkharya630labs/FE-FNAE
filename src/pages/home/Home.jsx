@@ -30,8 +30,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-1.png",
             subtitle: "For end-to-end solutions",
-            title: "Comprehensive Fire Safety Services, From",
-            highlight: " Design to Maintenance",
+            title: "Transforming Global Fire Safety Expertise into ",
+            highlight: " Regional Excellence",
             link: "/services/fire-protection",
         },
 
@@ -39,8 +39,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-2.png",
             subtitle: "High-end fire safety solutions",
-            title: "Driving Safety Innovation Across ",
-            highlight: " Diverse Industries Worldwide",
+            title: "Built on Decades of Trust and Generations of ",
+            highlight: " Technical Expertise",
             link: "/systems",
         },
 
@@ -48,19 +48,19 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-3.png",
             subtitle: "Innovation at the heart of safety",
-            title: "Norwegian Legacy of Fire Protection Expertise, ",
-            highlight: " Trusted Since 1953",
+            title: "From Vision to Legacy, Delivering Confidence Every ",
+            highlight: " Step of the Way",
             link: "/core-strengths",
         },
 
-        {
-            type: "default",
-            image: "/images/home/slide-4.png",
-            subtitle: "Backed By Norwegian Legacy Since 1953",
-            title: "Delivering Reliable Systems For ",
-            highlight: " Demanding Industrial Environments",
-            link: "/about",
-        },
+        // {
+        //     type: "default",
+        //     image: "/images/home/slide-4.png",
+        //     subtitle: "Backed By Norwegian Legacy Since 1953",
+        //     title: "Delivering Reliable Systems For ",
+        //     highlight: " Demanding Industrial Environments",
+        //     link: "/about",
+        // },
     ];
 
     const fadeUp = {
@@ -123,12 +123,12 @@ const Home = () => {
 
                                             <h1 className="text-4xl md:text-5xl font-light leading-tight">
                                                 <span className="text-white">
-                                                    Integrated Engineering Solutions
+                                                    Engineering Reliable Solutions for the 
                                                 </span>
                                                 <br />
-                                                <span className="text-white"> for </span>
+                                                <span className="text-white"> World's  </span>
                                                 <span className="text-secondary font-medium">
-                                                    Precision in Engineering
+                                                   Most Demanding Industries
                                                 </span>
                                             </h1>
 
