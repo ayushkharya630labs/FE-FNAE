@@ -30,8 +30,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-1.png",
             subtitle: "For end-to-end solutions",
-            title: "Transforming Global Fire Safety Expertise into ",
-            highlight: " Regional Excellence",
+            title: "Transforming Global Fire Safety Expertise into Regional Excellence",
+            highlight: " ",
             link: "/services/fire-protection",
         },
 
@@ -39,8 +39,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-2.png",
             subtitle: "High-end fire safety solutions",
-            title: "Built on Decades of Trust and Generations of ",
-            highlight: " Technical Expertise",
+            title: "Built on Decades of Trust and Generations of Technical Expertise",
+            highlight: " ",
             link: "/systems",
         },
 
@@ -48,8 +48,8 @@ const Home = () => {
             type: "default",
             image: "/images/home/slide-3.png",
             subtitle: "Innovation at the heart of safety",
-            title: "From Vision to Legacy, Delivering Confidence Every ",
-            highlight: " Step of the Way",
+            title: "From Vision to Legacy, Delivering Confidence Every Step of the Way",
+            highlight: " ",
             link: "/core-strengths",
         },
 
@@ -126,10 +126,10 @@ const Home = () => {
                                                     Engineering Reliable Solutions for the 
                                                 </span>
                                                 <br />
-                                                <span className="text-white"> World's  </span>
-                                                <span className="text-secondary font-medium">
-                                                   Most Demanding Industries
-                                                </span>
+                                                <span className="text-white"> World's Most Demanding Industries</span>
+                                                {/* <span className="text-secondary font-medium">
+                                                   
+                                                </span> */}
                                             </h1>
 
                                             {/* Stats */}
