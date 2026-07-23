@@ -1,5 +1,6 @@
 import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
+import { Link } from "react-router-dom";
 
 const Production = () => {
   
@@ -7,7 +8,12 @@ const Production = () => {
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                 breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Production"
                 title="Production & Manufacturing"
                 description="Firenor Middle East delivers specialized fabrication, production, and manufacturing solutions for fire protection skids, packaged systems, and engineered industrial units through strategic manufacturing partnerships across the UAE, China, and Europe."

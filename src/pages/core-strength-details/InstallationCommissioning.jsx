@@ -1,12 +1,18 @@
 import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
+import { Link } from "react-router-dom";
 
 const InstallationCommissioning = () => {
 
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                  breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Installation & Commissioning"
                 title="Installation & Commissioning"
                 description="Firenor Middle East provides end-to-end Installation and Commissioning services for fire protection, fire detection, electrical, instrumentation, and automation systems."

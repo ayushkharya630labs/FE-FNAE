@@ -1,12 +1,18 @@
 import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
+import { Link } from "react-router-dom";
 
 const Testing = () => {
  
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Testing"
                 title="Testing"
                 description="Firenor designs, produces, assembles, tests, installs and performs commissioning on an enormous variety of high quality active firefighting systems for onshore, offshore, and marine industries"

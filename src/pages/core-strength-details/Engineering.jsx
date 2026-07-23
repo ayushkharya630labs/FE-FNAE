@@ -1,5 +1,6 @@
 import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
+import { Link } from "react-router-dom";
 
 const Engineering = () => {
 
@@ -7,7 +8,12 @@ const Engineering = () => {
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Engineering"
                 title="Design & Engineering"
                 description="Firenor Middle East delivers advanced Design and Engineering solutions for fire protection, fire detection, and integrated industrial systems serving oil tanking terminals, petrochemical facilities, and high-risk industrial environments across the UAE."

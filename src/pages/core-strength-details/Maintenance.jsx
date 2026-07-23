@@ -1,12 +1,18 @@
 import CoreStrengthCards from "./CoreStrengthCards";
 import PageHero from "../../components/PageHero/PageHero";
+import { Link } from "react-router-dom";
 
 const Maintenance = () => {
   
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                 breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Maintenance"
                 title="Maintenance & Lifecycle Support"
                 description="Firenor Middle East provides comprehensive Maintenance and Lifecycle Support Services to maximize system availability, regulatory compliance, and long-term operational performance."

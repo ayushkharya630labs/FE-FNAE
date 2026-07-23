@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageHero from "../../components/PageHero/PageHero";
 import CoreStrengthCards from "./CoreStrengthCards";
 
@@ -7,7 +8,12 @@ const ProjectManagement = () => {
     return (
         <>
             <PageHero
-                breadcrumb="Home / Core Strengths"
+                  breadcrumb={
+                    <>
+                        <Link to="/">Home</Link> /{" "}
+                        <Link to="/core-strengths">Core Strengths</Link>
+                    </>
+                }
                 current="Project Management"
                 title="Project Management"
                 description="Firenor Middle East delivers projects through a structured Project Management framework aligned with internationally recognized PMO methodologies and governance practices."

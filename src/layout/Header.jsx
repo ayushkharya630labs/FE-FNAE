@@ -19,6 +19,8 @@ const Header = () => {
   const location = useLocation();
 
   const isServicesActive = location.pathname.startsWith("/services");
+  const isCoreStrengthsActive =
+    location.pathname.startsWith("/core-strengths");
 
   return (
     <>
@@ -118,7 +120,7 @@ const Header = () => {
             {/* Core Strengths */}
             <div className="nav-dropdown">
               <div
-                className={`nav-link dropdown-toggle ${isServicesActive ? "active" : ""
+                className={`nav-link dropdown-toggle ${isCoreStrengthsActive ? "active" : ""
                   }`}
               >
                 Core Strengths <DownOutlined className="dropdown-icon" />
@@ -168,7 +170,7 @@ const Header = () => {
 
               </div>
             </div>
-            
+
             <NavLink to="/our-partners" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
               Our Partners
             </NavLink>

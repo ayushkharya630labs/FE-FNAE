@@ -57,7 +57,11 @@ const PageHero = ({
               delay: 0.2,
             }}
           >
-            {breadcrumb.includes("Systems") ? (
+            {React.isValidElement(breadcrumb) ? (
+              <>
+                {breadcrumb} / <span className="text-[#47A5AE]">{current}</span>
+              </>
+            ) : typeof breadcrumb === "string" && breadcrumb.includes("Systems") ? (
               <>
                 Home /{" "}
                 <Link
