@@ -41,7 +41,7 @@ const AppRoutes = () => {
           <Route path="/clients" element={<Clients />} />
           {/* Core Strengths */}
           <Route path="/core-strengths" element={<CoreStrengths />} />
-          <Route path="/our-partner" element={<OurPartner />} />
+          <Route path="/our-partners" element={<OurPartner />} />
           <Route
             path="/core-strengths/project-management"
             element={<ProjectManagement />}

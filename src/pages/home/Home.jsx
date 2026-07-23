@@ -10,11 +10,10 @@ import {
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 
 const Home = () => {
 
@@ -92,19 +91,23 @@ const Home = () => {
             <section className="hero-section">
 
                 <Swiper
-                    modules={[Autoplay, Pagination, EffectFade]}
-                    effect="fade"
-                    loop
-                    speed={1200}
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    className="hero-swiper"
-                >
+    modules={[Autoplay, Pagination]}
+    loop={true}
+    speed={900}
+    slidesPerView={1}
+    spaceBetween={0}
+    grabCursor={true}
+    watchSlidesProgress={true}
+    autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    }}
+    pagination={{
+        clickable: true,
+    }}
+    className="hero-swiper"
+>
                     {heroSlides.map((slide, index) => (
                         <SwiperSlide key={index}>
                             <div
