@@ -170,6 +170,14 @@ Ex-certified wireless sensors`,
 const OurPartner = () => {
 
     const [currentPage, setCurrentPage] = useState(1);
+    const handlePageChange = (page) => {
+    setCurrentPage(page);
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
 
     const pageData = [
         partners.slice(0, 6),      // Page 1
@@ -267,9 +275,9 @@ const OurPartner = () => {
                     <div className="flex items-center justify-center gap-6 mt-14">
                         {/* Previous */}
                         <button
-                            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+                           onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
                             disabled={currentPage === 1}
-                            className="flex items-center justify-center"
+                            className="flex items-center justify-center cursor-pointer"
                         >
                             <img
                                 src="/images/pagination-left-arrow.png"
@@ -284,7 +292,7 @@ const OurPartner = () => {
                                 return (
                                     <button
                                         key={page}
-                                        onClick={() => setCurrentPage(page)}
+                                       onClick={() => handlePageChange(page)}
                                         className={`text-[17px] transition ${currentPage === page
                                             ? "text-black font-medium"
                                             : "text-gray-400"
@@ -297,9 +305,9 @@ const OurPartner = () => {
                         </div>
                         {/* Next */}
                         <button
-                            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+                            onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
                             disabled={currentPage === totalPages}
-                            className="flex items-center justify-center disabled:opacity-50"
+                            className="flex items-center justify-center disabled:opacity-50 cursor-pointer"
                         >
                             <img
                                 src="/images/pagination-right-arrow.png"
