@@ -85,7 +85,7 @@ const About = () => {
                             src="/images/about/story-1.jpg"
                             alt="Our Story"
                             className="w-full h-full object-cover"
-                            whileHover={{ scale: 1.03 }}
+                          
                             transition={{ duration: 0.4 }}
                         />
                     </motion.div>
@@ -106,7 +106,6 @@ const About = () => {
                             src="/images/about/story-2.jpg"
                             alt="Industry"
                             className="w-full h-full object-cover"
-                            whileHover={{ scale: 1.03 }}
                             transition={{ duration: 0.4 }}
                         />
                     </motion.div>
@@ -192,9 +191,7 @@ const About = () => {
                             src="/images/about/map.png"
                             alt="Global Presence"
                             className="w-full max-w-[800px] h-auto object-contain"
-                            whileHover={{
-                                scale: 1.02
-                            }}
+                          
                             transition={{
                                 duration: 0.4
                             }}

@@ -260,7 +260,7 @@ body {
   line-height: 1.15;
   font-weight: 300;
   max-width: 900px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   letter-spacing: -0.5px;
 }
 
@@ -875,7 +875,7 @@ footer {
 
   /* ---------- HERO ---------- */
   .hero-section {
-    height: 370px;
+    height: 430px;
   }
 
   .hero-content {
@@ -1037,8 +1037,7 @@ footer {
 @media (max-width: 767px) {
 
   .hero-content {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding: 50px 30px 40px 30px;
   }
 
   .hero-content h1 {

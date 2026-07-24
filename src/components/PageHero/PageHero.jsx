@@ -44,8 +44,8 @@ const PageHero = ({
       <div className="page-hero-overlay" />
 
       {/* Content */}
-      <div className="page-hero-content h-full flex items-center">
-        <div className="container-main m-0">
+      <div className="page-hero-content h-full flex items-center container-main">
+        <div className="m-0">
 
           {/* Breadcrumb */}
           <motion.p

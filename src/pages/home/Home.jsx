@@ -14,6 +14,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { desc } from "framer-motion/client";
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             type: "home",
             image: "/images/home/hero.jpg",
             title: "Integrated Engineering Solutions",
+            description: "Firenor Middle East",
             highlight: "Precision in Engineering",
         },
 
@@ -30,6 +32,7 @@ const Home = () => {
             image: "/images/home/slide-1.png",
             subtitle: "For end-to-end solutions",
             title: "Transforming Global Fire Safety Expertise into Regional Excellence",
+            description: "Trusted engineering solutions across the Middle East, built on a northern heritage of quality, safety, and innovation.",
             highlight: " ",
             link: "/services/fire-protection",
         },
@@ -39,6 +42,7 @@ const Home = () => {
             image: "/images/home/slide-2.png",
             subtitle: "High-end fire safety solutions",
             title: "Built on Decades of Trust and Generations of Technical Expertise",
+            description: "Combining proven experience, technical expertise, and innovation to deliver lasting value across critical industries.",
             highlight: " ",
             link: "/systems",
         },
@@ -48,6 +52,7 @@ const Home = () => {
             image: "/images/home/slide-3.png",
             subtitle: "Innovation at the heart of safety",
             title: "From Vision to Legacy, Delivering Confidence Every Step of the Way",
+            description: "From initial concept to long-term operation, delivering solutions that stand the test of time.",
             highlight: " ",
             link: "/core-strengths",
         },
@@ -135,9 +140,11 @@ const Home = () => {
                                                 </span> */}
                                             </h1>
 
+                                            <p className="mt-3 sm:text-[16px] text-[14px] text-gray-200">Fire Protection, Industrial Automation, Electrical & Instrumentation Solutions that safeguard assets, enhance reliability, and support operational excellence.</p>
+
                                             {/* Stats */}
                                             <motion.div
-                                                className="mt-16 grid grid-cols-3 max-w-3xl"
+                                                className="mt-10 grid grid-cols-3 max-w-3xl"
                                                 initial={{ opacity: 0 }}
                                                 animate={{ opacity: 1 }}
                                                 transition={{
@@ -211,6 +218,10 @@ const Home = () => {
                                                     </>
                                                 )}
                                             </h1>
+
+                                            <p className=" sm:text-[16px] text-[14px] text-gray-200 mb-6">
+                                                {slide.description}
+                                            </p>
 
                                             <Link
                                                 to={slide.link}
