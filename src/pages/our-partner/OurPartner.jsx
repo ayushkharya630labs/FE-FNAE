@@ -197,9 +197,9 @@ const OurPartner = () => {
                 breadcrumb="Home"
                 current="Our Partners"
                 title="Our Partners"
-                description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."
+                description="Nurturing a winning network together we create mutual and enduring relationships. Respect and trust one another as we carry out our roles and responsibilities."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/partner/bg-img.jpg"
+                rightBg="/images/partner/bg-img.png"
             />
 
             <motion.section
@@ -293,7 +293,7 @@ const OurPartner = () => {
                                     <button
                                         key={page}
                                        onClick={() => handlePageChange(page)}
-                                        className={`text-[17px] transition ${currentPage === page
+                                        className={`text-[17px] transition cursor-pointer ${currentPage === page
                                             ? "text-black font-medium"
                                             : "text-gray-400"
                                             }`}

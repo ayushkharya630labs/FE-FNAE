@@ -35,22 +35,25 @@ const coreStrengths = [
   },
 ];
 
-const CoreStrengthCards = ({
-  currentPath = "",
-  title = "Core Strengths",
-}) => {
+const CoreStrengthCards = ({ currentPath = "", title = "Core Strengths" }) => {
   const filteredStrengths = coreStrengths.filter(
     (item) => item.link !== currentPath
   );
 
   return (
     <div className="mt-16">
-      <h2 className="section-title mb-8 px-24">
-        {title}
-      </h2>
+      <h2 className="section-title mb-8 md:px-24 px-4">{title}</h2>
 
-      <div className="flex gap-5 overflow-x-auto pb-4">
-
+      <div
+        className="
+          flex gap-5
+          overflow-x-auto
+          pb-4
+          px-4
+          md:px-24
+          md:overflow-visible
+        "
+      >
         {filteredStrengths.map((item, index) => (
           <Link
             key={index}
@@ -58,6 +61,13 @@ const CoreStrengthCards = ({
             className="
               min-w-[235px]
               max-w-[235px]
+              flex-shrink-0
+
+              md:min-w-0
+              md:max-w-none
+              md:flex-1
+              md:flex-shrink
+
               bg-white
               border
               border-[#dddddd]
@@ -69,7 +79,6 @@ const CoreStrengthCards = ({
               hover:border-[#c4122f]
             "
           >
-
             {/* Image */}
             <div className="h-[120px] overflow-hidden">
               <img
@@ -81,7 +90,6 @@ const CoreStrengthCards = ({
 
             {/* Content */}
             <div className="relative h-[78px] px-4 flex items-center">
-
               <span
                 className="
                   absolute
@@ -130,12 +138,9 @@ const CoreStrengthCards = ({
                   }}
                 />
               </div>
-
             </div>
-
           </Link>
         ))}
-
       </div>
     </div>
   );
