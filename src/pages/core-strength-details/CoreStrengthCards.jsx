@@ -5,12 +5,12 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 const coreStrengths = [
   {
     title: "Project Management",
-    image: "/images/core-strengths/strengths-1.jpg",
+    image: "/images/core-strengths/strengths-1.png",
     link: "/core-strengths/project-management",
   },
   {
     title: "Engineering",
-    image: "/images/core-strengths/strengths-2.jpg",
+    image: "/images/core-strengths/strengths-2.png",
     link: "/core-strengths/engineering",
   },
   {
@@ -50,7 +50,7 @@ const CoreStrengthCards = ({ currentPath = "", title = "Core Strengths" }) => {
           overflow-x-auto
           pb-4
           px-4
-          md:px-24
+          md:px-1
           md:overflow-visible
         "
       >

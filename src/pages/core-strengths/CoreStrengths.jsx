@@ -43,7 +43,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-1.jpg"
+                                src="/images/core-strengths/strengths-1.png"
                                 alt="Fire Protection"
                                 className="w-full h-48 object-cover"
                             />
@@ -80,7 +80,7 @@ const CoreStrengths = () => {
                             }}
                         >
                             <img
-                                src="/images/core-strengths/strengths-2.jpg"
+                                src="/images/core-strengths/strengths-2.png"
                                 alt="Instrumentation"
                                 className="w-full h-48 object-cover"
                             />

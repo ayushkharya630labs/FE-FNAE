@@ -62,7 +62,7 @@ const Production = () => {
                             </ul>
                         </div>
 
-                        <div style={{ height: "60vh" }}>
+                        <div className="h-full">
                             <img style={{ height: "100%" }}
                                 src="/images/core-strengths/production/img-1.png"
                                 alt="Project Management"

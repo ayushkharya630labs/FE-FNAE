@@ -18,7 +18,7 @@ const ProjectManagement = () => {
                 title="Project Management"
                 description="Firenor Middle East delivers projects through a structured Project Management framework aligned with internationally recognized PMO methodologies and governance practices."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/core-strengths/strengths-1.jpg"
+                rightBg="/images/core-strengths/strengths-1.png"
             />
 
             <section className="py-16 bg-[#f4f4f4]">

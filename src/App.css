@@ -847,8 +847,8 @@ footer {
 
   /* ---------- Container ---------- */
   .container-main {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   /* ---------- Section Headings ---------- */

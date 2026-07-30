@@ -199,7 +199,7 @@ const OurPartner = () => {
                 title="Our Partners"
                 description="Nurturing a winning network together we create mutual and enduring relationships. Respect and trust one another as we carry out our roles and responsibilities."
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/partner/bg-img.png"
+                rightBg="/images/partner/bg-img.svg"
             />
 
             <motion.section

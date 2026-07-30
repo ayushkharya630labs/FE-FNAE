@@ -59,7 +59,7 @@ const InstallationCommissioning = () => {
                             </ul>
                         </div>
 
-                        <div style={{ height: "60vh" }}>
+                        <div className="h-full">
                             <img style={{ height: "100%" }}
                                 src="/images/core-strengths/installation-commissioning/img-1.png"
                                 alt="Project Management"

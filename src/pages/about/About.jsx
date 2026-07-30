@@ -44,7 +44,7 @@ const About = () => {
                 title="About Us"
                 description="Firenor Middle East is a well-established engineering company with its roots from the Scandinavian region, internationally recognized for engineering excellence, Project Management skills, innovation, and a strong safety culture. Building on this heritage, we deliver reliable and integrated engineering solutions to clients across the Oil & Gas, Industrial, Power, and Offshore sectors. "
                 leftBg="/images/home/hero-right.jpg"
-                rightBg="/images/about/about-hero.jpg"
+                rightBg="/images/about/about-hero.png"
             />
 
             {/* ================= OUR STORY ================= */}
@@ -82,7 +82,7 @@ const About = () => {
                         transition={{ duration: 0.8, delay: 0.15 }}
                     >
                         <motion.img
-                            src="/images/about/story-1.jpg"
+                            src="/images/about/story-1.png"
                             alt="Our Story"
                             className="w-full h-full object-cover"
                           
@@ -103,7 +103,7 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <motion.img
-                            src="/images/about/story-2.jpg"
+                            src="/images/about/story-2.png"
                             alt="Industry"
                             className="w-full h-full object-cover"
                             transition={{ duration: 0.4 }}

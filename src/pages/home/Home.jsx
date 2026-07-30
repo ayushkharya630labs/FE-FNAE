@@ -679,7 +679,7 @@ const Home = () => {
                                     duration: 0.8,
                                     ease: [0.22, 1, 0.36, 1]
                                 }}
-                                whileHover={{ y: -6 }}
+                               
                             >
                                 <motion.img
                                     src="/images/core-strengths/strengths-5.png"
@@ -707,10 +707,10 @@ const Home = () => {
                                     delay: 0.1,
                                     duration: 0.7
                                 }}
-                                whileHover={{ y: -6 }}
+                               
                             >
                                 <motion.img
-                                    src="/images/core-strengths/strengths-1.jpg"
+                                    src="/images/core-strengths/strengths-1.png"
                                     alt=""
                                     whileHover={{ scale: 1.04 }}
                                     transition={{ duration: 0.5 }}
@@ -731,7 +731,7 @@ const Home = () => {
                                     delay: 0.25,
                                     duration: 0.7
                                 }}
-                                whileHover={{ y: -6 }}
+                               
                             >
                                 <motion.img
                                     src="/images/core-strengths/strengths-3.png"
@@ -755,7 +755,7 @@ const Home = () => {
                                     delay: 0.4,
                                     duration: 0.7
                                 }}
-                                whileHover={{ y: -6 }}
+                              
                             >
                                 <motion.img
                                     src="/images/core-strengths/strengths-6.png"
